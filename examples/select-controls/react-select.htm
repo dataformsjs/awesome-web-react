@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React Select Demo</title>
+        <style>
+            * { padding:0; margin:0; }
+
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                padding:40px;
+            }
+
+            #root {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section { 
+                box-shadow: 0 1px 5px 0 rgba(0,0,0,.5);
+                padding: 30px 60px;
+                margin: 40px;
+                border-radius: 20px;
+                width: 300px;
+                text-align: center;
+            }
+
+            p {
+                margin: 30px 60px;
+            }
+
+            .react-select { text-align: left; }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+
+        <!--
+            React Select
+            https://react-select.com/home
+
+            Several dependencies are required to use React Select from CDN
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/emotion@9.2.12/dist/emotion.umd.min.js"></script>
+        <script src="https://unpkg.com/prop-types@15.5.10/prop-types.min.js"></script>
+        <script src="https://unpkg.com/react-input-autosize@2.2.1/dist/react-input-autosize.min.js"></script>
+        <script src="https://unpkg.com/react-select@2.1.2/dist/react-select.min.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-select.jsx"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React Flux Demo</title>
+        <link rel="stylesheet" href="state-management.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+
+        <!--
+            React Flux
+            https://facebook.github.io/flux/
+        -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flux/3.1.3/Flux.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flux/3.1.3/FluxUtils.min.js"></script> -->
+
+        <!--
+            An event emitter is needed for flux:
+            npm install events
+            https://github.com/Gozala/events/
+        -->
+        <script>
+            window.module = window;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/events@3.1.0/events.min.js"></script>
+        
+        <!-- App Code -->
+        <script type="text/babel" src="react-flux.jsx"></script>
+    </body>
+</html>

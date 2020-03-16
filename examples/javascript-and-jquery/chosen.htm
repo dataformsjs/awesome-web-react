@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>jQuery Chosen Demo</title>
+
+        <style>
+            * { padding:0; margin:0; }
+
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                padding:40px;
+            }
+
+            #root {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section { 
+                box-shadow: 0 1px 5px 0 rgba(0,0,0,.5);
+                padding: 30px 60px;
+                margin: 40px;
+                border-radius: 20px;
+                width: 300px;
+                text-align: center;
+            }
+
+            p {
+                margin: 30px 60px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.css">
+        <style>
+            /* Make sure width is set */
+            .chosen-select { width: 300px }
+
+            /* CSS overrides for jQuery Chosen so it has more padding, etc */
+            .chosen-container {
+                text-align: left;
+                margin: 20px;
+                display: block;
+            }
+
+            .chosen-drop { padding:10px; } 
+
+            .chosen-container-single .chosen-single {
+                height: 34px;
+                line-height: 34px;
+                border-radius: 0;
+            }
+
+            .chosen-container-single .chosen-single span { text-align: center; }
+
+            .chosen-container-single .chosen-single div b {
+                top: 10%;
+                position: absolute;
+            }
+
+            .chosen-container-single .chosen-single abbr { top:10px; }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+
+        <!--
+            jQuery and Chosen
+
+            https://jquery.com/
+            https://harvesthq.github.io/chosen/
+        -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.jquery.min.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="chosen.jsx"></script>
+    </body>
+</html>

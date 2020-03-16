@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Template Demo</title>
+        <style>
+            * { padding:0; margin:0; }
+
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                padding:40px;
+            }
+
+            #root {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            p {
+                margin: 30px 60px;
+            }
+
+            section {
+                box-shadow: 0 1px 5px 0 rgba(0,0,0,.5);
+                padding: 30px 60px;
+                margin: 40px;
+                border-radius: 20px;
+                width: 100%;
+                max-width: 400px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+        <script>
+            // ** Delete this code block if not needed for your app
+
+            // Use this if your app needs `require` and `import` functions:
+            //
+            // jsxLoader.addBabelPolyfills();
+
+            // If you use the `...` spread sytax on your demo then use the following:
+            //
+            // jsxLoader.evalCode = 'const { id, ...other } = { id:123, test:456 }';
+        </script>
+
+        <!--
+            *** Your Libraries here ***
+        -->
+
+        <!-- App Code -->
+        <script type="text/babel">
+            function HelloMessage(props) {
+                return (
+                    <div>
+                        Hello {props.name}!
+                    </div>
+                );
+            }
+
+            class App extends React.Component {
+                render() {
+                    return (
+                        <>
+                            <h1>Template Page</h1>
+                            <p>
+                                <a href="/">🏠 Back to all Examples</a>
+                            </p>
+                            <p>
+                                <a href="https://www.example.com/" target="_blank">https://www.example.com/</a>
+                            </p>
+
+                            <section>
+                                <HelloMessage name="World" />
+                                <HelloMessage name="World" />
+                            </section>
+                        </>
+                    );
+                }
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.getElementById('root')
+            );
+        </script>
+
+        <!--
+            If your page will not work with IE or other legacy broswers, then uncomment the following.
+            If it will work with all browsers then remove this section.
+        -->
+        <!--
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/web-components/safari-nomodule.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/web-components/old-browser-warning.min.js"></script>
+        -->
+    </body>
+</html>

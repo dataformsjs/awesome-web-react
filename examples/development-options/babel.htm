@@ -1,0 +1,87 @@
+
+<!doctype html>
+<!--
+    Layout, Images, etc are based on example from:
+    https://www.dataformsjs.com/examples/hello-world/en/react.htm
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Babel - Hello World Demo</title>
+        <link rel="stylesheet" href="hello-world.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+            function App() {
+                return (
+                    <React.Fragment>
+                        <h1>Hello World!</h1>
+
+                        <p>
+                            <a href="/">🏠 Back to all Examples</a>
+                            <br /><a href="https://babeljs.io/docs/en/babel-standalone" target="_blank">🌐 Babel Standalone</a>
+                        </p>
+
+                        <div className="home-page-animation">
+                            <img src="sun.svg" className="sun" />
+                            <div className="orbit">
+                                <img src="planet.svg" className="planet" />
+                                <img src="moon.svg" className="moon" />
+                            </div>
+                        </div>
+                    </React.Fragment>
+                )
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.getElementById('root')
+            );
+        </script>
+
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+        
+        <!--
+            Babel for JSX
+            Use [babel-standalone@6] for IE and old versions of Safari on iOS.
+            Babel 7 [@babel] can be used for modern browsers.
+
+            Babel 6 does not support React Fragment shorthand syntax `<>`.
+            Babel 7 can be used be used with legacy browsers however it requires many polyfills.
+                For needed pollyfills see:
+                    https://github.com/dataformsjs/dataformsjs/blob/master/js/react/jsxLoader.js
+                And search for:
+                    `polyfillUrl` and `addAdditionalPolyfills`
+
+            <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <!--
+            Define `exports` and `require`.
+
+            Most often code compiled with Babel will need both of these defined.
+            This simple hello world demo does not requires these but most apps will.
+
+            If using the `jsxLoader` this can be set from `jsxLoader.addBabelPolyfills()`.
+        -->
+        <script>
+            window.exports = window;
+            window.require = function(module) {
+                switch (module) {
+                    case 'react':
+                        return window.React;
+                    case 'react-dom':
+                        return window.ReactDOM;
+                    default:
+                        return window[module];
+                }
+            };
+        </script>
+    </body>
+</html>

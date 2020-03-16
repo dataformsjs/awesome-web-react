@@ -1,0 +1,70 @@
+
+<!doctype html>
+<!--
+    Layout, Images, etc are based on example from:
+    https://www.dataformsjs.com/examples/hello-world/en/react.htm
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Hyperscript Tagged Markup - Hello World Demo</title>
+        <link rel="stylesheet" href="hello-world.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <script type="module">
+            import htm from 'https://unpkg.com/htm?module'
+            const html = htm.bind(React.createElement);
+
+            // This demo will also work with Preact and HTM.
+            // Preact is a fast 3kB alternative to React with the same modern API.
+            //    https://preactjs.com/
+            //
+            // Changed needed to switch to Preact:
+            //   1) Comment out React Scripts above
+            //   2) Comment out above import
+            //   3) Uncomment below import
+            //   5) Replace `React.Component` with `Component`
+            //   5) Replace `ReactDOM.render` with `render`
+            //
+            // import { html, Component, render } from 'https://unpkg.com/htm/preact/standalone.module.js'
+
+            class App extends React.Component {
+                render() {
+                    return html`
+                        <h1>Hello World!</h1>
+
+                        <p>
+                            <a href="/">🏠 Back to all Examples</a>
+                            <br /><a href="https://github.com/developit/htm" target="_blank">🌐 HTM (Hyperscript Tagged Markup)</a>
+                        </p>
+
+                        <div class="home-page-animation">
+                            <img src="sun.svg" class="sun" />
+                            <div class="orbit">
+                                <img src="planet.svg" class="planet" />
+                                <img src="moon.svg" class="moon" />
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            ReactDOM.render(
+                html`<${App} />`,
+                document.getElementById('root')
+            );
+        </script>
+
+        <!--
+            This page won't work with IE, old versions of Safari, and UC Browser (Desktop) so provide a warning to the user
+        -->
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/web-components/safari-nomodule.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/web-components/old-browser-warning.min.js"></script>
+    </body>
+</html>

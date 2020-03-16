@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React Hook Form Demo</title>
+        <style>
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+            body {
+                background-color: #f4f6f8;
+            }
+            #root {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2,
+            .text-center{ text-align: center; }
+
+            div { padding:10px 20px; text-align: center; }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 4px;
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+                width: 300px;
+            }
+
+            input,
+            button {
+                padding: 0.5em 1em;
+                border-radius: 4px;
+                border: 1px solid #5f7a95;
+            }
+
+            input { width: 200px; }
+
+            /* Show errors to the right of the input */
+            /*
+            .form-error {
+                background-color:red;
+                margin:1em;
+                padding: 0.5em 1em;
+            }
+            */
+
+            /* Show errors under the input */
+            .form-error {
+                margin-top: .5em;
+                display: block;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+        <script>
+            // Define `exports` and `require` for [react-hook-form] if using [react-hook-form.min.js]
+            // jsxLoader.addBabelPolyfills();
+        </script>
+
+        <!--
+            https://react-hook-form.com/
+
+            There are a number of different build options:
+
+            - [react-hook-form.min.js]
+              - [useForm] is added as global function.
+              - `exports` and `require` are required ahead of time so call `jsxLoader.addBabelPolyfills();` before using
+
+            - [react-hook-form.umd.js]
+              - [ReactHookForm.useForm] is added with the namespace
+		-->
+        <script src="https://cdn.jsdelivr.net/npm/react-hook-form@4.10.2/dist/react-hook-form.umd.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-hook-form.jsx"></script>
+
+        <!--
+            At the time of development the version for IE is broken and causes both IE and Chrome to refresh over and over.
+            Once it's fixed it could be used in the future but until then show warning for old browsers.
+
+            <script src="https://cdn.jsdelivr.net/npm/react-hook-form@4.10.2/dist/react-hook-form.ie11.js"></script>
+        -->
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/web-components/safari-nomodule.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/web-components/old-browser-warning.min.js"></script>
+    </body>
+</html>

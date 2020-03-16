@@ -1,0 +1,49 @@
+
+<!doctype html>
+<!--
+    Layout, Images, etc are based on example from:
+    https://www.dataformsjs.com/examples/hello-world/en/react.htm
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>No-JSX - Hello World Demo</title>
+        <link rel="stylesheet" href="hello-world.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <script>
+            var e = React.createElement;
+
+            function App() {
+                return (
+                    e(React.Fragment, null,
+                        e("h1", null, "Hello World!"),
+                        e("p", null,
+                            e("a", {href: "/"}, "🏠 Back to all Examples"),
+                            e("br", null),
+                            e("a", {href: "https://reactjs.org/docs/react-without-jsx.html", target:"_blank"}, "🌐 React without JSX")
+                        ),
+                        e("div", {className: "home-page-animation"},
+                            e("img", {src: "sun.svg", className: "sun"}),
+                            e("div", {className: "orbit"},
+                                e("img", {src: "planet.svg", className: "planet"}),
+                                e("img", {src: "moon.svg", className: "moon"})
+                            )
+                        )
+                    )
+                );
+            }
+
+            ReactDOM.render(
+                e(App, null),
+                document.getElementById('root')
+            );
+        </script>
+    </body>
+</html>

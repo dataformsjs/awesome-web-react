@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Draft.js Demo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/draft-js@0.11.4/dist/Draft.css">
+        <link rel="stylesheet" href="draft-js.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+
+        <!--
+            Serveral polyfills are needed for legacy browsers (IE 11, etc) prior to [Draft.js] being loaded.
+            The [nomodule] will make sure they are only loaded for legacy browsers.
+        -->
+        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.startsWith%2CArray.prototype.fill"></script>
+
+        <!--
+			https://draftjs.org/
+            https://immutable-js.github.io/immutable-js/
+
+			If updating version make sure the CDN version of [immutable] matches
+			the [package.json] file from [Draft.js].
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/immutable@3.7.4/dist/immutable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/draft-js@0.11.4/dist/Draft.min.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="draft-js.jsx"></script>
+    </body>
+</html>

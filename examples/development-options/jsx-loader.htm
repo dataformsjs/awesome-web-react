@@ -1,0 +1,51 @@
+
+<!doctype html>
+<!--
+    Layout, Images, etc are based on example from:
+    https://www.dataformsjs.com/examples/hello-world/en/react.htm
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>JSX Loader - Hello World Demo</title>
+        <link rel="stylesheet" href="hello-world.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+            function App() {
+                return (
+                    <React.Fragment>
+                        <h1>Hello World!</h1>
+
+                        <p>
+                            <a href="/">🏠 Back to all Examples</a><br />
+                            {jsxLoader.isSupportedBrowser ? <span>DataFormsJS [jsxLoader.js] is being used to quickly compile JSX to JS.</span>
+                            : <span>You are using an older Browser so Babel is being used to compile JSX to JS.</span>}
+                        </p>
+
+                        <div className="home-page-animation">
+                            <img src="sun.svg" className="sun" />
+                            <div className="orbit">
+                                <img src="planet.svg" className="planet" />
+                                <img src="moon.svg" className="moon" />
+                            </div>
+                        </div>
+                    </React.Fragment>
+                )
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.getElementById('root')
+            );
+        </script>
+
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>  
+    </body>
+</html>

@@ -1,0 +1,199 @@
+{"categories": [
+    {
+        "category": "🌐 Web Based Development Options 🚀",
+        "directory": "development-options",
+        "links": [
+            {
+                "name": "Babel Standalone",
+                "descList": [
+                    "Standalone build of Babel for use in non-Node.js environments.",
+                    "Babel Standalone is very large so using it for productions apps is generally not recommended in most situations.",
+                    "However it is very useful for development because you can debug and step through code directly in browser with React Development Tools.",
+                    "JSX Code used in a Browser with Babel Standalone can also be used for local development using [create-react-app] and other tools."
+                ],
+                "example": "babel.htm",
+                "site": "https://babeljs.io/docs/en/babel-standalone",
+                "github": "https://github.com/babel/babel/tree/master/packages/babel-standalone"
+            },
+            {
+                "name": "DataFormsJS JSX Loader",
+                "descList": [
+                    "An ultra-fast and tiny (5.2 kB) browser based compiler for JSX / React.",
+                    "Created for production use with all browsers. This site was created because of the JSX Loader and most examples on this page use it.",
+                    "The JSX Loader is designed for compatibility with Babel Standalone.",
+                    "It compiles JSX to JS for modern browsers and for legacy browsers it will download and use Polyfills and Babel Standalone."
+                ],
+                "example": "jsx-loader.htm",
+                "site": "https://www.dataformsjs.com/",
+                "github": "https://github.com/dataformsjs/dataformsjs/blob/master/docs/jsx-loader.md"
+            },
+            {
+                "name": "HTM (Hyperscript Tagged Markup)",
+                "descList": [
+                    "JSX alternative using standard tagged templates, with compiler support.",
+                    "HTM is extremely small (~0.5 kB).",
+                    "It provides many options and works with all modern browsers; however this means it will not work with legacy browsers."
+                ],
+                "example": "hyperscript-tagged-markup.htm",
+                "site": null,
+                "github": "https://github.com/developit/htm"
+            },
+            {
+                "name": "React without JSX",
+                "descList": [
+                    "Most React apps are created using JSX, however it is not required and plain JavaScript can be used.",
+                    "JSX is generally used because it allows for much more readable code and easier development with React."
+                ],
+                "example": "no-jsx.htm",
+                "site": "https://reactjs.org/docs/react-without-jsx.html",
+                "github": null
+            }
+        ]
+    },
+    {
+        "category": "🌟 Awesome Lists 🌠",
+        "directory": null,
+        "description": "Find a large selection of React Components and Tools from these Awesome React Lists:",
+        "links": [
+            {
+                "name": "Awesome React",
+                "description": "A collection of awesome things regarding the React ecosystem.",
+                "github": "https://github.com/enaqx/awesome-react"
+            },
+            {
+                "name": "Awesome React Components",
+                "description": "Curated List of React Components & Libraries.",
+                "github": "https://github.com/brillout/awesome-react-components"
+            }
+        ]
+    },
+    {
+        "category": "🎨 UI 🖌️",
+        "directory": "ui",
+        "links": [
+            {
+                "name": "Styled Components",
+                "description": "Visual primitives for the component age.",
+                "example": "styled-components.htm",
+                "site": "https://styled-components.com/",
+                "github": "https://github.com/styled-components/styled-components"
+            }
+        ]
+    },
+    {
+        "category": "✈️ Routing 🛩️",
+        "directory": "routing",
+        "links": [
+            {
+                "name": "React Router",
+                "description": "Declarative routing for React.",
+                "example": "react-router.htm",
+                "site": "https://reacttraining.com/react-router/",
+                "github": "https://github.com/ReactTraining/react-router"
+            }
+        ]
+    },
+    {
+        "category": "🖥️ Forms 📱",
+        "directory": "forms",
+        "links": [
+            {
+                "name": "React Hook Form",
+                "description": "Performant, flexible and extensible forms with easy to use validation.",
+                "example": "react-hook-form.htm",
+                "site": "https://react-hook-form.com/",
+                "github": "https://github.com/react-hook-form/react-hook-form"
+            }
+        ]
+    },
+    {
+        "category": "⬆️ Select Controls ⬇️",
+        "directory": "select-controls",
+        "links": [
+            {
+                "name": "React Select",
+                "description": "A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.",
+                "example": "react-select.htm",
+                "site": "https://react-select.com/home",
+                "github": "https://github.com/jedwatson/react-select"
+            }
+        ]
+    },
+    {
+        "category": "📜 Rich Text Editors 📜",
+        "directory": "rich-text-editors",
+        "links": [
+            {
+                "name": "Draft.js",
+                "description": "Rich Text Editor Framework for React.",
+                "example": "draft-js.htm",
+                "site": "https://draftjs.org/",
+                "github": "https://github.com/facebook/draft-js"
+            }
+        ]
+    },
+    {
+        "category": "📚 Component Libraries ⚙️",
+        "directory": "component-libraries",
+        "links": [
+            {
+                "name": "DataFormsJS",
+                "description": "Display data from JSON and GraphQL Services, Lazy Loading, Filter, Sorting, I18N, L10N, and more.",
+                "example": "dataformsjs.htm",
+                "site": "https://www.dataformsjs.com/",
+                "github": "https://github.com/dataformsjs/dataformsjs"
+            }
+        ]
+    },
+    {
+        "category": "⚙️ Javascript and jQuery Libraries ⚙️",
+        "directory": "javascript-and-jquery",
+        "links": [
+            {
+                "name": "Documentation from React",
+                "description": "Integrating with Other Libraries.",
+                "site": "https://reactjs.org/docs/integrating-with-other-libraries.html"
+            },
+            {
+                "name": "Chosen",
+                "description": "Chosen is a widely used jQuery plugin that makes long, unwieldy select boxes much more user-friendly.",
+                "example": "chosen.htm",
+                "site": "https://harvesthq.github.io/chosen/",
+                "github": "https://github.com/harvesthq/chosen"
+            },
+            {
+                "name": "Remarkable",
+                "description": "Markdown parser done right. Fast and easy to extend.",
+                "example": "remarkable.htm",
+                "github": "https://github.com/jonschlinkert/remarkable"
+            }
+        ]
+    },
+    {
+        "category": "🗃️ State Management 📦",
+        "directory": "state-management",
+        "description": "State Management for large apps can be a complex issue with many options. These examples show the same simple example and how state can be shared among unrelated components. View code comments in each example for more details.",
+        "links": [
+            {
+                "name": "React Redux",
+                "description": "A Predictable State Container for JS Apps.",
+                "example": "react-redux.htm",
+                "site": "https://react-redux.js.org/",
+                "github": "https://github.com/reduxjs/react-redux"
+            },
+            {
+                "name": "React Flux",
+                "description": "Application Architecture for Building User Interfaces.",
+                "example": "react-flux.htm",
+                "site": "https://facebook.github.io/flux/",
+                "github": "https://github.com/facebook/flux"
+            },
+            {
+                "name": "React Hooks",
+                "description": "React Hooks let you use state and other React features without writing classes.",
+                "example": "react-hooks.htm",
+                "site": "https://reactjs.org/docs/hooks-reference.html"
+            }
+        ]
+    }
+]}
