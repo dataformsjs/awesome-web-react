@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React DnD Demo</title>
+        <link rel="stylesheet" href="react-dnd.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.0.1/js/react/jsxLoader.min.js"></script>
+        
+        <!--
+            React DnD
+            https://github.com/react-dnd/react-dnd/
+
+            NOTE - for IE the polyfill must be loaded before ReactDnD.
+            By default [jsxLoader] would load it after on the [DOMContentLoaded] event.
+            The [nomodule] prevents modern browsers from loading the polyfill.
+        -->
+        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Array.isArray,Array.prototype.find,Object.assign,Object.keys,URL,fetch,Promise,Promise.prototype.finally,String.prototype.endsWith,String.prototype.startsWith,String.prototype.includes,String.prototype.repeat,WeakSet,Symbol,Number.isInteger,String.prototype.codePointAt,String.fromCodePoint"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-dnd@10.0.2/dist/umd/ReactDnD.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-dnd-html5-backend@10.0.2/dist/umd/ReactDnDHTML5Backend.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-dnd.jsx"></script>
+    </body>
+</html>

@@ -133,6 +133,19 @@
         ]
     },
     {
+        "category": "👌 Drag and Drop 🤏",
+        "directory": "drag-and-drop",
+        "links": [
+            {
+                "name": "React DnD",
+                "description": "Drag and Drop for React",
+                "example": "react-dnd.htm",
+                "site": "https://react-dnd.github.io/react-dnd/about",
+                "github": "https://github.com/react-dnd/react-dnd"
+            }
+        ]
+    },
+    {
         "category": "📚 Component Libraries ⚙️",
         "directory": "component-libraries",
         "links": [
