@@ -68,9 +68,16 @@
         ]
     },
     {
-        "category": "🎨 UI 🖌️",
+        "category": "🎨 UI 🌈",
         "directory": "ui",
         "links": [
+            {
+                "name": "Ant Design",
+                "description": "A UI Design Language and React UI library",
+                "example": "ant-design.htm",
+                "site": "https://ant.design/",
+                "github": "https://github.com/ant-design/ant-design"
+            },
             {
                 "name": "Styled Components",
                 "description": "Visual primitives for the component age.",
