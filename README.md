@@ -5,8 +5,10 @@
 <hr>
 
 <p align="center">
-	🚀 View Examples at: <a href="https://awesome-web-react.js.org/">https://awesome-web-react.js.org/</a>&nbsp;&nbsp;&nbsp;
-	<a href="CONTRIBUTING.md">🤝 Contributing</a>&nbsp;&nbsp;&nbsp;
+	🚀 View Examples at: <a href="https://awesome-web-react.js.org/">https://awesome-web-react.js.org/</a>
+</p>
+<p align="center">
+    <a href="CONTRIBUTING.md">🤝 Contributing</a>
 </p>
 <p align="center">
     <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg"></a>
