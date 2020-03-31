@@ -76,6 +76,10 @@
 
             .site-link { display: inline-flex; align-items: center; }
             .site-link img { margin-right:1em; }
+            .site-link span { display:none; }
+            @media (min-width: 600px) {
+                .site-link span { display:initial; }
+            }
             .filter-count { margin-top:1em; }
 
             section h2 { margin:0 auto 1em auto; }
