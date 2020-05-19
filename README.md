@@ -116,6 +116,7 @@ _Links here include non-React sites. The example pages show how to use widely-us
 - [React Redux](https://github.com/reduxjs/react-redux) - A Predictable State Container for JS Apps.
 - [React Flux](https://github.com/facebook/flux) - Application Architecture for Building User Interfaces.
 - [React Hooks](https://reactjs.org/docs/hooks-reference.html) - React Hooks let you use state and other React features without writing classes.
+- [Recoil](https://github.com/facebookexperimental/Recoil) - A Facebook experimental state management library for complex React UIs.
 
 # License
 

@@ -213,6 +213,13 @@
                 "description": "React Hooks let you use state and other React features without writing classes.",
                 "example": "react-hooks.htm",
                 "site": "https://reactjs.org/docs/hooks-reference.html"
+            },
+            {
+                "name": "Recoil",
+                "description": "A Facebook experimental state management library for complex React UIs.",
+                "example": "react-recoil.htm",
+                "site": "https://recoiljs.org/",
+                "github": "https://github.com/facebookexperimental/Recoil"
             }
         ]
     }
