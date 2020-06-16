@@ -84,6 +84,13 @@
                 "example": "styled-components.htm",
                 "site": "https://styled-components.com/",
                 "github": "https://github.com/styled-components/styled-components"
+            },
+            {
+                "name": "Evergreen",
+                "description": "Evergreen React UI Framework by Segment.",
+                "example": "evergreen.htm",
+                "site": "https://evergreen.segment.com/",
+                "github": "https://github.com/segmentio/evergreen"
             }
         ]
     },
