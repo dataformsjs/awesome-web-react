@@ -4,14 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Evergreen Demo</title>
-        <link rel="stylesheet" href="evergreen.css">
     </head>
     <body>
         <div id="root"></div>
-
-        <!--
-            TODO - finish - use more components from evergreen and remove page CSS if possible
-        -->
 
         <!--
             React
@@ -25,17 +20,6 @@
             https://www.dataformsjs.com/
         -->
         <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.0/js/react/jsxLoader.min.js"></script>
-        <script>
-            // ** Delete this code block if not needed for your app
-
-            // Use this if your app needs `require` and `import` functions:
-            //
-            // jsxLoader.addBabelPolyfills();
-
-            // If you use the `...` spread sytax on your demo then use the following:
-            //
-            // jsxLoader.evalCode = 'const { id, ...other } = { id:123, test:456 }';
-        </script>
 
         <!--
             Evergreen UI
@@ -47,12 +31,10 @@
         <script type="text/babel" src="evergreen.jsx"></script>
 
         <!--
-            If your page will not work with IE or other legacy broswers, then uncomment the following.
-            If it will work with all browsers then remove this section.
-        -->
-        <!--
+            The UMD version of Evergreen used contains modern JS such as the
+            spread syntax `...` so it won't work with old browsers.
+        -->        
         <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.0/js/web-components/safari-nomodule.min.js"></script>
         <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.0/js/web-components/old-browser-warning.min.js"></script>
-        -->
     </body>
 </html>
