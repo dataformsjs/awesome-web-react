@@ -160,8 +160,8 @@
         ]
     },
     {
-        "category": "📚 Component Libraries ⚙️",
-        "directory": "component-libraries",
+        "category": "📚 Component and Hook Libraries ⚙️",
+        "directory": "component-and-hook-libraries",
         "links": [
             {
                 "name": "DataFormsJS",
@@ -169,6 +169,12 @@
                 "example": "dataformsjs.htm",
                 "site": "https://www.dataformsjs.com/",
                 "github": "https://github.com/dataformsjs/dataformsjs"
+            },
+            {
+                "name": "React Query",
+                "description": "Hooks for fetching, caching and updating asynchronous data in React.",
+                "example": "react-query.htm",
+                "github": "https://github.com/tannerlinsley/react-query"
             }
         ]
     },

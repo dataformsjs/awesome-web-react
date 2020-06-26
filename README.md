@@ -27,7 +27,7 @@
 - [Select Controls](#select-controls)
 - [Rich Text Editors](#rich-text-editors)
 - [Drag and Drop](#drag-and-drop)
-- [Component Libraries](#component-libraries)
+- [Component and Hook Libraries](#component-and-hook-libraries)
 - [Javascript and jQuery Libraries](#javascript-and-jquery-libraries)
 - [State Management](#state-management)
 - [License](#license)
@@ -100,9 +100,10 @@ _Find a large selection of React Components and Tools from these Awesome React L
 
 - [React DnD](https://github.com/react-dnd/react-dnd) - Drag and Drop for React
 
-## Component Libraries
+## Component and Hook Libraries
 
 - [DataFormsJS](https://github.com/dataformsjs/dataformsjs) - Display data from JSON and GraphQL Services, Lazy Loading, Filter, Sorting, I18N, L10N, and more.
+- [React Query](https://github.com/tannerlinsley/react-query) - Hooks for fetching, caching and updating asynchronous data in React
 
 ## Javascript and jQuery Libraries
 

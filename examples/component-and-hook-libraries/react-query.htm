@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React Query Demo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui-flag@2.4.0/flag.min.css">
+        <link rel="stylesheet" href="react-query.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.1/js/react/jsxLoader.min.js"></script>
+
+        <!--
+            React Query
+            https://github.com/tannerlinsley/react-query
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/react-query@2.4.0/dist/react-query.production.min.js"></script>
+
+        <!--
+            NOTE - for IE polyfills must be loaded before ReactQuery is called.
+            By default [jsxLoader.js] loads many such as `fetch` and `Promise` but 
+            currently doesn't handle `Object.values`. Once [jsxLoader.js] supports
+            `Object.values` then the following script can be removed.
+            The [nomodule] prevents modern browsers from loading the polyfill.
+        -->
+        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.values"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-query.jsx"></script>
+    </body>
+</html>
