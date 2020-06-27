@@ -28,3 +28,6 @@ section {
     justify-content: center;
     flex-direction: column;
 }
+
+ul { list-style-type: none; margin-top: 20px; }
+li { padding: 5px; }

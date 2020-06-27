@@ -1,6 +1,7 @@
 const useQuery = ReactQuery.useQuery
 
-const fetchCountries = () => fetch('https://www.dataformsjs.com/data/geonames/countries').then(res => res.json())
+const urlCountries = 'https://www.dataformsjs.com/data/geonames/countries?order_by=country'
+const fetchCountries = () => fetch(urlCountries).then(res => res.json())
 
 function ShowCountries() {
 
@@ -12,7 +13,7 @@ function ShowCountries() {
     })
 
     // Include so developers can see how many times the hook runs and how the state changes
-    console.log({ isLoading, isError, data, error });
+    console.log({ isLoading, isError, data, error })
 
     if (isLoading) {
         return <span>Loading...</span>
@@ -24,7 +25,7 @@ function ShowCountries() {
 
     return (
         <>
-            <h1>Countries</h1>
+            <h2>Countries</h2>
             <ul>
                 {data && data.countries && data.countries.map(country => {
                     return (
