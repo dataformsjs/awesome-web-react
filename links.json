@@ -91,6 +91,13 @@
                 "example": "evergreen.htm",
                 "site": "https://evergreen.segment.com/",
                 "github": "https://github.com/segmentio/evergreen"
+            },
+            {
+                "name": "React-Toastify",
+                "description": "React-Toastify allows you to add notifications to your app with ease.",
+                "example": "react-toastify.htm",
+                "site": "https://fkhadra.github.io/react-toastify/",
+                "github": "https://github.com/fkhadra/react-toastify"
             }
         ]
     },

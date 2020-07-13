@@ -76,9 +76,10 @@ _Find a large selection of React Components and Tools from these Awesome React L
 
 ## UI
 
-- [Ant Design](https://github.com/ant-design/ant-design) - A UI Design Language and React UI library
+- [Ant Design](https://github.com/ant-design/ant-design) - A UI Design Language and React UI library.
 - [Styled Components](https://github.com/styled-components/styled-components) - Visual primitives for the component age.
-- [Evergreen](https://github.com/segmentio/evergreen) - Evergreen React UI Framework by Segment
+- [Evergreen](https://github.com/segmentio/evergreen) - Evergreen React UI Framework by Segment.
+- [React-Toastify](https://github.com/fkhadra/react-toastify) - React-Toastify allows you to add notifications to your app with ease.
 
 ## Routing
 
