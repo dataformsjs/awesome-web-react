@@ -21,22 +21,13 @@
             DataFormsJS JSX Loader
             https://www.dataformsjs.com/
         -->
-        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.1/js/react/jsxLoader.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.2/js/react/jsxLoader.min.js"></script>
 
         <!--
             React Query
             https://github.com/tannerlinsley/react-query
         -->
         <script src="https://cdn.jsdelivr.net/npm/react-query@2.4.0/dist/react-query.production.min.js"></script>
-
-        <!--
-            NOTE - for IE polyfills must be loaded before ReactQuery is called.
-            By default [jsxLoader.js] loads many such as `fetch` and `Promise` but 
-            currently doesn't handle `Object.values`. Once [jsxLoader.js] supports
-            `Object.values` then the following script can be removed.
-            The [nomodule] prevents modern browsers from loading the polyfill.
-        -->
-        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.values"></script>
 
         <!-- App Code -->
         <script type="text/babel" src="react-query.jsx"></script>

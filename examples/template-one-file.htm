@@ -51,12 +51,14 @@
             DataFormsJS JSX Loader
             https://www.dataformsjs.com/
         -->
-        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.1/js/react/jsxLoader.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.2/js/react/jsxLoader.min.js"></script>
         <script>
             // ** Delete this code block if not needed for your app
 
-            // Use this if your app needs `require` and `import` functions:
+            // Use `addBabelPolyfills` if your app needs `import` and `require`
+            // for Babel or `exports` and `require(module)` for the Browser:
             //
+            // jsxLoader.globalNamespaces.classnames = 'classNames'; // Optional based on page modules
             // jsxLoader.addBabelPolyfills();
 
             // If you use the `...` spread sytax on your demo then use the following:
