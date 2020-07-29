@@ -124,3 +124,5 @@ _Links here include non-React sites. The example pages show how to use widely-us
 # License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Images located under [img/src](img/src) may be copyright or trademark of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
