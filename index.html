@@ -27,7 +27,7 @@
                 text-align: center;
                 align-items: center;
             }
-            #root { flex-direction: row; flex-wrap: wrap; }
+            #root { flex-direction: row; flex-wrap: wrap; padding-bottom: 40px; }
 
             /* Fix for IE 11 */
             @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
@@ -58,10 +58,7 @@
             }
 
             @media (min-width: 640px) {
-                body,
-                #root {
-                    padding: 40px;
-                }
+                body { padding: 40px; }
 
                 section {
                     padding: 30px 60px;
@@ -88,6 +85,8 @@
                 box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px 1px rgba(0, 0, 0, 0.1);
                 border: none;
                 background-color: hsla(193, 95%, 98%, 1);
+                /* For Safari on iOS */
+                -webkit-appearance: none;
             }
 
             .site-link { display: inline-flex; align-items: center; }
@@ -107,6 +106,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: start;
+                padding-bottom: 20px;
             }
 
             li.link {
@@ -133,10 +133,11 @@
             section ul li { margin-bottom:1em; margin-left:.5em; }
             section.category ul li { margin-bottom: 2em; }
             section ul li:last-child { margin-bottom: 0; }
-            section ul li p { margin:.5em 0; }
-            section ul li a { margin:.5em 1em; font-weight: bold; }
-            section ul li > a { margin-left:0; }
-            section ul li ul { margin-left:1em; margin-top:1em; list-style-type:disc; }
+            section ul li p { margin: 1em 0; }
+            section ul li .links { margin: 1em 1em 0; }
+            section ul li .links a { margin: 0 1em 0.5em; font-weight: bold; display: inline-block; }
+            section ul li ul { margin-left:1em; margin-top:1em; margin-bottom: 1em; }
+            section.category ul li ul { list-style-type:disc; }
             section.category ul li ul li { margin: .5em; }
 
             section.about p { margin: 1.5em; }
@@ -332,7 +333,7 @@
             function Link(props) {
                 return (
                     <li class="link">
-                        {props.image && props.example && 
+                        {props.image && props.example &&
                             <a href={'examples/' + props.directory + '/' + props.example}>
                                 <img src={props.image} alt={props.name} class={props.imageClassName || ""} />
                             </a>
@@ -343,9 +344,11 @@
                                 <p>{props.description}</p> :
                                 <DescriptionList descList={props.descList} />
                             }
-                            {props.example && <a href={'examples/' + props.directory + '/' + props.example}>Example</a>}
-                            {props.site && <a href={props.site} target="_blank">Site</a>}
-                            {props.github && <a href={props.github} target="_blank">GitHub</a>}
+                            <div class="links">
+                                {props.example && <a href={'examples/' + props.directory + '/' + props.example}>Example</a>}
+                                {props.site && <a href={props.site} target="_blank">Site</a>}
+                                {props.github && <a href={props.github} target="_blank">GitHub</a>}
+                            </div>
                         </div>
                     </li>
                 )
