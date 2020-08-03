@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SWR Demo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui-flag@2.4.0/flag.min.css">
+        <link rel="stylesheet" href="vercel-swr.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.2/js/react/jsxLoader.min.js"></script>
+        <script>
+            // `addBabelPolyfills` enabled `exports` and `require(module)` for the Browser.
+            // `window.module` and `window.__dirname` are required for the current CDN build of SWR to run.
+            jsxLoader.addBabelPolyfills();
+            window.__dirname = '';
+            window.module = window;
+        </script>
+
+        <!--
+            SWR
+            https://github.com/vercel/swr
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/swr@0.3.0/dist/index.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="vercel-swr.jsx"></script>
+
+        <!--
+            This page will not work with IE 11 and likely other legacy browsers.
+        -->
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.2/js/web-components/safari-nomodule.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.2.2/js/web-components/old-browser-warning.min.js"></script>
+    </body>
+</html>

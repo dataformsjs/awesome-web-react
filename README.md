@@ -105,6 +105,7 @@ _Find a large selection of React Components and Tools from these Awesome React L
 
 - [DataFormsJS](https://github.com/dataformsjs/dataformsjs) - Display data from JSON and GraphQL Services, Lazy Loading, Filter, Sorting, I18N, L10N, and more.
 - [React Query](https://github.com/tannerlinsley/react-query) - Hooks for fetching, caching and updating asynchronous data in React
+- [SWR](https://github.com/vercel/swr) - React Hooks library for data fetching.
 
 ## Javascript and jQuery Libraries
 

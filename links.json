@@ -201,8 +201,17 @@
                 "name": "React Query",
                 "description": "Hooks for fetching, caching and updating asynchronous data in React.",
                 "example": "react-query.htm",
+                "site": "https://react-query.tanstack.com/",
                 "github": "https://github.com/tannerlinsley/react-query",
                 "image": "https://raw.githubusercontent.com/tannerlinsley/react-query/master/media/repo-dark.png"
+            },
+            {
+                "name": "SWR",
+                "description": "React Hooks library for data fetching.",
+                "example": "vercel-swr.htm",
+                "site": "https://swr.vercel.app/",
+                "github": "https://github.com/vercel/swr",
+                "image": "img/logos/swr.png"
             }
         ]
     },
