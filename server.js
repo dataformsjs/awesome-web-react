@@ -9,7 +9,7 @@
  * It works well but has few features so is not intended for production apps.
  *
  * Since this file is small you can step through the code using a debugger
- * which makes it is usefull for learning purposes.
+ * which makes it is useful for learning purposes.
  * 
  * @link https://github.com/dataformsjs
  * @license CC0 "Public Domain" license
