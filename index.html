@@ -85,6 +85,14 @@
                 max-width: 800px;
             }
 
+            /*
+                The <label> is included for Accessibility for users that use a screen reader,
+                however it is hidden on screen and a default placeholder is used.
+                The current version of Chrome DevTools Lighthouse (Chrome v84) will
+                report the label is missing if `display: none` is used however it works
+                when simply moving the label off screen.
+            */
+            label { position: absolute; top:-1000px; left:-1000px; }
             input {
                 padding: 1em 2em;
                 border-radius: 2em;
@@ -216,7 +224,7 @@
         </h1>
 
         <section class="about">
-            <h2>Develop online with <a href="https://reactjs.org/" target="blank">React</a>! 🌐 <br><span>No Build Tools Needed! 🚧</span></h2>
+            <h2>Develop online with <a href="https://reactjs.org/" target="blank" rel="noopener">React</a>! 🌐 <br><span>No Build Tools Needed! 🚧</span></h2>
             <p>
                 <a href="https://github.com/dataformsjs/awesome-web-react" class="site-link">
                     <img src="https://raw.githubusercontent.com/dataformsjs/website/master/public/img/logos/GitHub-Mark-32px.png" alt="GitHub">
@@ -286,7 +294,9 @@
                         <section className="filter">
                             <h2>Filter Code List and Examples</h2>
 
+                            <label for="filter">Enter filter, example 'design' or 'validation'</label>
                             <InputFilter
+                                id="filter"
                                 filter-selector="section.category ul li.link"
                                 filter-results-selector=".filter-count"
                                 filter-results-text-all="Showing all {totalCount} Items"
@@ -355,8 +365,8 @@
                             }
                             <div class="links">
                                 {props.example && <a href={'examples/' + props.directory + '/' + props.example}>Example</a>}
-                                {props.site && <a href={props.site} target="_blank">Site</a>}
-                                {props.github && <a href={props.github} target="_blank">GitHub</a>}
+                                {props.site && <a href={props.site} target="_blank" rel="noopener">Site</a>}
+                                {props.github && <a href={props.github} target="_blank" rel="noopener">GitHub</a>}
                             </div>
                         </div>
                     </li>
