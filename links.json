@@ -39,7 +39,7 @@
                 "example": "hyperscript-tagged-markup.htm",
                 "site": null,
                 "github": "https://github.com/developit/htm",
-                "image": "img/logos/developit-htm.png"
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/developit-htm.png"
             },
             {
                 "name": "React without JSX",
@@ -62,12 +62,14 @@
             {
                 "name": "Awesome React",
                 "description": "A collection of awesome things regarding the React ecosystem.",
-                "github": "https://github.com/enaqx/awesome-react"
+                "github": "https://github.com/enaqx/awesome-react",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/awesome-react.png"
             },
             {
                 "name": "Awesome React Components",
                 "description": "Curated List of React Components & Libraries.",
-                "github": "https://github.com/brillout/awesome-react-components"
+                "github": "https://github.com/brillout/awesome-react-components",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/awesome-react-components.png"
             }
         ]
     },
@@ -152,7 +154,8 @@
                 "description": "A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.",
                 "example": "react-select.htm",
                 "site": "https://react-select.com/home",
-                "github": "https://github.com/jedwatson/react-select"
+                "github": "https://github.com/jedwatson/react-select",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/react-select.png"
             }
         ]
     },
@@ -180,7 +183,8 @@
                 "description": "Drag and Drop for React",
                 "example": "react-dnd.htm",
                 "site": "https://react-dnd.github.io/react-dnd/about",
-                "github": "https://github.com/react-dnd/react-dnd"
+                "github": "https://github.com/react-dnd/react-dnd",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/react-dnd.png"
             }
         ]
     },
@@ -222,20 +226,23 @@
             {
                 "name": "Documentation from React",
                 "description": "Integrating with Other Libraries.",
-                "site": "https://reactjs.org/docs/integrating-with-other-libraries.html"
+                "site": "https://reactjs.org/docs/integrating-with-other-libraries.html",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/integrating-with-other-libraries.png"
             },
             {
                 "name": "Chosen",
                 "description": "Chosen is a widely used jQuery plugin that makes long, unwieldy select boxes much more user-friendly.",
                 "example": "chosen.htm",
                 "site": "https://harvesthq.github.io/chosen/",
-                "github": "https://github.com/harvesthq/chosen"
+                "github": "https://github.com/harvesthq/chosen",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/chosen.png"
             },
             {
                 "name": "Remarkable",
                 "description": "Markdown parser done right. Fast and easy to extend.",
                 "example": "remarkable.htm",
-                "github": "https://github.com/jonschlinkert/remarkable"
+                "github": "https://github.com/jonschlinkert/remarkable",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/remarkable.png"
             }
         ]
     },

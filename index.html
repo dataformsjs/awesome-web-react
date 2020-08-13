@@ -342,21 +342,17 @@
                         {props.description && <p>{props.description}</p>}
                         <ul>
                             {props.links && props.links.map(link => {
-                                return <Link directory={props.directory} {...link} />
+                                return <Card directory={props.directory} {...link} />
                             })}
                         </ul>
                     </section>
                 );
             }
 
-            function Link(props) {
+            function Card(props) {
                 return (
                     <li class="link">
-                        {props.image && props.example &&
-                            <a href={'examples/' + props.directory + '/' + props.example}>
-                                <img src={props.image} alt={props.name} class={props.imageClassName || ""} />
-                            </a>
-                        }
+                        <CardImage {...props} />
                         <div class="details">
                             <strong>{props.name}</strong>
                             {props.description ?
@@ -370,6 +366,31 @@
                             </div>
                         </div>
                     </li>
+                )
+            }
+
+            function CardImage(props) {
+                if (!props.image) {
+                    return null;
+                }
+
+                let url = null;
+                let target = '_blank';
+                let rel = 'noopener';
+                if (props.example) {
+                    url = 'examples/' + props.directory + '/' + props.example;
+                    target = null;
+                    rel = null;
+                } else if (props.site) {
+                    url = props.site;
+                } else {
+                    url = props.github;
+                }
+
+                return (
+                    <a href={url} target={target} rel={rel}>
+                        <img src={props.image} alt={props.name} class={props.imageClassName || ""} />
+                    </a>
                 )
             }
 
@@ -391,7 +412,8 @@
                                 url="links.json"
                                 isLoading={<ShowLoading />}
                                 hasError={<ShowError />}
-                                isLoaded={<Categories />} />
+                                isLoaded={<Categories />}
+                                onViewUpdated={onViewUpdated} />
                         </ErrorBoundary>
                     )
                 }
@@ -401,6 +423,41 @@
                 <App />,
                 document.getElementById('root')
             );
+
+            // All code below is for use with Google Chrome so that then the user clicks
+            // back and forth between pages the position on screen will be kept.
+            // This provides a better experience for users who view examples one at
+            // a time in the same tab and keep going back to the main page.
+            //
+            // This issue does not affect Firefox, Safari, or IE 11 because those
+            // browsers display the previously rendered HTML when clicking back.
+            //
+            // Most recently tested with Chrome Version 84. If the behavior changes
+            // for Chrome in the future then this code can be removed or if it starts
+            // happening in other browsers then those browsers can use this code as well.
+
+            let trackScrolling = false;
+            if (window.chrome) {
+                document.addEventListener('scroll', function () {
+                    if (trackScrolling) {
+                        localStorage.setItem('scrollY', window.scrollY);
+                    }
+                });
+            }
+
+            function onViewUpdated() {
+                // Only run if Chrome and wait until content loads
+                if (!window.chrome || !document.querySelectorAll('li.link img').length) {
+                    return;
+                }
+                const scrollY = parseInt(localStorage.getItem('scrollY'), 10);
+                window.setTimeout(() => {
+                    if (scrollY) {
+                        window.scrollTo(0, scrollY);
+                    }
+                    trackScrolling = true;
+                }, 500);
+            }
         </script>
     </body>
 </html>

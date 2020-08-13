@@ -55,7 +55,10 @@ This list is for Web Based React Development so please make sure you submit pull
 - Do not submit image files (other than small SVG's) to this repository. Just like code SVG's published here will be published as CC0 "Public Domain". If you need to host images you can submit a pull request to the following repository and host them there:
   - https://github.com/dataformsjs/static-files
   - Folder / Directory: https://github.com/dataformsjs/static-files/tree/master/img/awesome-web-react
-- Small PNG files for the directory https://github.com/dataformsjs/awesome-web-react/tree/master/img/logos can be submitted here if used as part of a card layout for the item being added.
+- Card Images
+  - Card images are not required when submitting an initial example. The card layout works without images and an image can be submitted or generated later.
+  - If a project has a logo image then it should be used as the Card Layout Image and linked from GitHub.
+  - Small SVG and PNG images can be saved in this repository at `img/logos`. If the image is large or a print screen (screenshot) is used then please submit it to: https://github.com/dataformsjs/static-files/tree/master/img/awesome-web-react/card-images
 - You have full artist control for you example code! It simply needs to work and be useful.
 
 ## How can I make my React Component work directly in a browser?
@@ -107,4 +110,4 @@ This list is for Web Based React Development so please make sure you submit pull
 
 ## Translations
 
-- Simply copy this repository and publish it yourself. Since a public domain license is used all code can simply be copied. Once translated the new repositories will be linked back.
+- Simply copy this repository and publish it yourself. Since a public domain license is used all code can simply be copied. If translated the new repositories will be linked back.
