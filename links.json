@@ -189,6 +189,20 @@
         ]
     },
     {
+        "category": "📷 Image and Media Controls 🖼️",
+        "directory": "image-and-media-controls",
+        "links": [
+            {
+                "name": "DataFormsJS Image Gallery",
+                "description": "Component <ImageGallery> that shows Large Image in Overlay with Mobile and Desktop support.",
+                "example": "dataformjs-image-gallery.htm",
+                "site": "https://www.dataformsjs.com/",
+                "github": "https://github.com/dataformsjs/dataformsjs",
+                "image": "https://raw.githubusercontent.com/dataformsjs/website/master/public/img/examples/image-gallery.svg"
+            }
+        ]
+    },
+    {
         "category": "📚 Component and Hook Libraries ⚙️",
         "directory": "component-and-hook-libraries",
         "links": [

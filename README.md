@@ -101,6 +101,10 @@ _Find a large selection of React Components and Tools from these Awesome React L
 
 - [React DnD](https://github.com/react-dnd/react-dnd) - Drag and Drop for React
 
+## Image and Media Controls
+
+- [DataFormsJS Image Gallery](https://www.dataformsjs.com/examples/image-gallery-react.htm) - Component <ImageGallery> that shows Large Image in Overlay with Mobile and Desktop support.
+
 ## Component and Hook Libraries
 
 - [DataFormsJS](https://github.com/dataformsjs/dataformsjs) - Display data from JSON and GraphQL Services, Lazy Loading, Filter, Sorting, I18N, L10N, and more.
