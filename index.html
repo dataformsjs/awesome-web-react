@@ -467,9 +467,8 @@
                 var now = (new Date()).getTime();
                 var lastSet = parseInt(localStorage.getItem('lastSet'), 10);
                 var seconds = (now - lastSet) / 1000;
-                console.log('last viewed ' + seconds + ' ago');
                 if (seconds > (10 * 60)) {
-                    console.log('more than 10 min skipping scroll position')
+                    keepScrollPosition = true;
                     return;
                 }
                 // Update filter text using previously set value
