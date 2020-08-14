@@ -105,6 +105,9 @@
                 /* For Safari on iOS */
                 -webkit-appearance: none;
             }
+            input:focus {
+                box-shadow: 0 0 0 3px hsl(193, 95%, 45%, 1), 0 0 3px 1px hsl(193, 95%, 65%, 1);
+            }
 
             .site-link { display: inline-flex; align-items: center; }
             .site-link img { margin-right:1em; }
@@ -335,8 +338,8 @@
                 });
 
                 // See comments near the bottom of this file.
-                if (window.chrome && trackScrolling) {
-                    window.localStorage.setItem('scrollY', '0');
+                if (window.chrome && keepScrollPosition) {
+                    localStorage.setItem('filter', document.getElementById('filter').value);
                 }
             }
 
@@ -441,15 +444,15 @@
             // for Chrome in the future then this code can be removed or if it starts
             // happening in other browsers then those browsers can use this code as well.
             //
-            // Scroll position is reset to 0 from `afterFilter()` if the user changes
-            // the filter because filter is not saved to local storage so clicking back
-            // in Chrome ends up in an unexpected location if using this feature.
+            // The input filter is also saved to local storage from `afterFilter()`
+            // as it changes the layout of the page when the user clicks back.
 
-            let trackScrolling = false;
+            let keepScrollPosition = false;
             if (window.chrome) {
                 document.addEventListener('scroll', function () {
-                    if (trackScrolling) {
+                    if (keepScrollPosition) {
                         localStorage.setItem('scrollY', window.scrollY);
+                        localStorage.setItem('lastSet', (new Date()).getTime());
                     }
                 });
             }
@@ -459,12 +462,33 @@
                 if (!window.chrome || !document.querySelectorAll('li.link img').length) {
                     return;
                 }
+                // If the user has waited longer than 10 minutes before coming back to
+                // this page then ignore.
+                var now = (new Date()).getTime();
+                var lastSet = parseInt(localStorage.getItem('lastSet'), 10);
+                var seconds = (now - lastSet) / 1000;
+                console.log('last viewed ' + seconds + ' ago');
+                if (seconds > (10 * 60)) {
+                    console.log('more than 10 min skipping scroll position')
+                    return;
+                }
+                // Update filter text using previously set value
+                const filterText = localStorage.getItem('filter');
+                if (filterText) {
+                    // https://stackoverflow.com/a/46012210
+                    const filter = document.getElementById('filter');
+                    var nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+                    nativeInputValueSetter.call(filter, filterText);
+                    var evt = new Event('input', { bubbles: true});
+                    filter.dispatchEvent(evt);
+                }
+                // Get previous scroll position and wait half a second before scrolling
                 const scrollY = parseInt(localStorage.getItem('scrollY'), 10);
                 window.setTimeout(() => {
                     if (scrollY) {
                         window.scrollTo(0, scrollY);
                     }
-                    trackScrolling = true;
+                    keepScrollPosition = true;
                 }, 500);
             }
         </script>
