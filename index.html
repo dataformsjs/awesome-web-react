@@ -333,6 +333,11 @@
                     }
                     section.style.display = (hasVisibleItems ? '' : 'none');
                 });
+
+                // See comments near the bottom of this file.
+                if (window.chrome && trackScrolling) {
+                    window.localStorage.setItem('scrollY', '0');
+                }
             }
 
             function Category(props) {
@@ -435,6 +440,10 @@
             // Most recently tested with Chrome Version 84. If the behavior changes
             // for Chrome in the future then this code can be removed or if it starts
             // happening in other browsers then those browsers can use this code as well.
+            //
+            // Scroll position is reset to 0 from `afterFilter()` if the user changes
+            // the filter because filter is not saved to local storage so clicking back
+            // in Chrome ends up in an unexpected location if using this feature.
 
             let trackScrolling = false;
             if (window.chrome) {
