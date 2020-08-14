@@ -31,7 +31,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://ant.design/" target="_blank">https://ant.design/</a>
+                    <a href="https://ant.design/" target="_blank" rel="noopener">https://ant.design/</a>
                 </p>
 
                 <section>

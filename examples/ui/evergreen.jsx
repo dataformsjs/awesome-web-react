@@ -69,7 +69,7 @@ class App extends React.Component {
                     <Link href="/">🏠 Back to all Examples</Link>
                 </Paragraph>
                 <Paragraph>
-                    <Link href="https://evergreen.segment.com/" target="_blank">https://evergreen.segment.com/</Link>
+                    <Link href="https://evergreen.segment.com/" target="_blank" rel="noopener">https://evergreen.segment.com/</Link>
                 </Paragraph>
 
                 <CustomForm />

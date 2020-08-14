@@ -260,7 +260,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://react-redux.js.org/" target="_blank">https://react-redux.js.org/</a>
+                    <a href="https://react-redux.js.org/" target="_blank" rel="noopener">https://react-redux.js.org/</a>
                 </p>
 
                 <section className="number-list">

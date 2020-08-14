@@ -224,7 +224,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://draftjs.org/" target="_blank">https://draftjs.org/</a>
+                    <a href="https://draftjs.org/" target="_blank" rel="noopener">https://draftjs.org/</a>
                 </p>
 
                 <RichEditorExample handleChange={({editorState}) => {

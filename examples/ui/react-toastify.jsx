@@ -23,7 +23,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://fkhadra.github.io/react-toastify/" target="_blank">https://fkhadra.github.io/react-toastify/</a>
+                    <a href="https://fkhadra.github.io/react-toastify/" target="_blank" rel="noopener">https://fkhadra.github.io/react-toastify/</a>
                 </p>
 
                 <section>

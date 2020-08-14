@@ -122,7 +122,7 @@ function App() {
 				<a href="/">🏠 Back to all Examples</a>
 			</p>
 			<p>
-				<a href="https://react-dnd.github.io/react-dnd/about" target="_blank">https://react-dnd.github.io/react-dnd/about</a>
+				<a href="https://react-dnd.github.io/react-dnd/about" target="_blank" rel="noopener">https://react-dnd.github.io/react-dnd/about</a>
 			</p>
 
 			<section>

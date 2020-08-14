@@ -57,7 +57,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://github.com/jonschlinkert/remarkable" target="_blank">https://github.com/jonschlinkert/remarkable</a>
+                    <a href="https://github.com/jonschlinkert/remarkable" target="_blank" rel="noopener">https://github.com/jonschlinkert/remarkable</a>
                 </p>
 
                 <MarkdownEditor />

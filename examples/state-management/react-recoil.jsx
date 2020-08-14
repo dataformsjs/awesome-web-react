@@ -148,7 +148,7 @@ function App() {
                 <a href="/">🏠 Back to all Examples</a>
             </p>
             <p>
-                <a href="https://recoiljs.org/" target="_blank">https://recoiljs.org/</a>
+                <a href="https://recoiljs.org/" target="_blank" rel="noopener">https://recoiljs.org/</a>
             </p>
 
             <NumberScreen />

@@ -281,7 +281,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://facebook.github.io/flux/" target="_blank">https://facebook.github.io/flux/</a>
+                    <a href="https://facebook.github.io/flux/" target="_blank" rel="noopener">https://facebook.github.io/flux/</a>
                 </p>
 
                 <section className="number-list">

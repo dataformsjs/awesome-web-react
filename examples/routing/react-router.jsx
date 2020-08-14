@@ -12,7 +12,7 @@ function HomePage() {
                 <a href="/">🏠 Back to all Examples</a>
             </p>
             <p>
-                <a href="https://reacttraining.com/react-router/" target="_blank">https://reacttraining.com/react-router/</a>
+                <a href="https://reacttraining.com/react-router/" target="_blank" rel="noopener">https://reacttraining.com/react-router/</a>
             </p>
         </section>
     );

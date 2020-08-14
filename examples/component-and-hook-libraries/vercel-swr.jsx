@@ -44,7 +44,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://github.com/vercel/swr" target="_blank">https://github.com/vercel/swr</a>
+                    <a href="https://github.com/vercel/swr" target="_blank" rel="noopener">https://github.com/vercel/swr</a>
                 </p>
 
                 <section>

@@ -74,7 +74,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://react-hook-form.com/" target="_blank">https://react-hook-form.com/</a>
+                    <a href="https://react-hook-form.com/" target="_blank" rel="noopener">https://react-hook-form.com/</a>
                 </p>
                 <ExampleForm />
             </>

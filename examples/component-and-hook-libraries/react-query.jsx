@@ -49,7 +49,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://github.com/tannerlinsley/react-query" target="_blank">https://github.com/tannerlinsley/react-query</a>
+                    <a href="https://github.com/tannerlinsley/react-query" target="_blank" rel="noopener">https://github.com/tannerlinsley/react-query</a>
                 </p>
 
                 <section>

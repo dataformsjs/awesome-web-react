@@ -60,6 +60,7 @@ class App extends React.Component {
                         primary
                         href="https://styled-components.com/"
                         target="_blank"
+                        rel="noopener"
                     >https://styled-components.com/</Link>
                 </Text>
             </Page>

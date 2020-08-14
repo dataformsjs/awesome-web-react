@@ -74,7 +74,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://harvesthq.github.io/chosen/" target="_blank">https://harvesthq.github.io/chosen/</a>
+                    <a href="https://harvesthq.github.io/chosen/" target="_blank" rel="noopener">https://harvesthq.github.io/chosen/</a>
                 </p>
 
                 <section>

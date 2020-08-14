@@ -16,7 +16,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://www.example.com/" target="_blank">https://www.example.com/</a>
+                    <a href="https://www.example.com/" target="_blank" rel="noopener">https://www.example.com/</a>
                 </p>
 
                 <section>

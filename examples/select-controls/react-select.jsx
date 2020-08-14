@@ -52,7 +52,7 @@ class App extends React.Component {
                     <a href="/">🏠 Back to all Examples</a>
                 </p>
                 <p>
-                    <a href="https://react-select.com/home" target="_blank">https://react-select.com/home</a>
+                    <a href="https://react-select.com/home" target="_blank" rel="noopener">https://react-select.com/home</a>
                 </p>
 
                 <section>

@@ -143,7 +143,7 @@ function App() {
                 <a href="/">🏠 Back to all Examples</a>
             </p>
             <p>
-                <a href="https://reactjs.org/docs/hooks-reference.html" target="_blank">https://reactjs.org/docs/hooks-reference.html</a>
+                <a href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noopener">https://reactjs.org/docs/hooks-reference.html</a>
             </p>
 
             <NumberScreen />
