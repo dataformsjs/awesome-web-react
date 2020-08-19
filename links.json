@@ -203,6 +203,20 @@
         ]
     },
     {
+        "category": "Charts and Maps",
+        "directory": "charts-and-maps",
+        "links": [
+            {
+                "name": "React Simple Maps",
+                "description": "Create beautiful SVG maps in react with d3-geo and topojson using a declarative api.",
+                "example": "react-simple-maps.htm",
+                "site": "https://www.react-simple-maps.io/",
+                "github": "https://github.com/zcreativelabs/react-simple-maps",
+                "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/react-simple-maps.png"
+            }
+        ]
+    },
+    {
         "category": "📚 Component and Hook Libraries ⚙️",
         "directory": "component-and-hook-libraries",
         "links": [

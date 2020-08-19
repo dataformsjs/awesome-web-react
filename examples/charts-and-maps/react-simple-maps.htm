@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React Simple Maps Demo</title>
+        <link rel="stylesheet" href="react-simple-maps.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.4.2/js/react/jsxLoader.min.js"></script>
+        <script>
+            // For most apps `jsxLoader.addBabelPolyfills` can be used if the app
+            // needs `import` and `require` for Babel or `exports` and `require(module)` for the Browser.
+            // However react-simple-maps requires many of d3 and other dependencies so
+            // a custom verison is used here.
+            //
+            // jsxLoader.addBabelPolyfills();
+
+            window.exports = window;
+            window.require = function(module) {
+                if (module.indexOf('d3-') === 0) {
+                    return window.d3;
+                }
+                switch (module) {
+                    case 'react':
+                        return window.React;
+                    case 'react-dom':
+                        return window.ReactDOM;
+                    case 'prop-types':
+                        return window.PropTypes;
+                    case 'topojson-client':
+                        return window.topojson;
+                    case 'uuid':
+                        return {
+                            v4: window.uuidv4,
+                        }
+                    default:
+                        return window[module];
+                }
+            };
+        </script>
+
+        <!--
+            https://github.com/wwayne/react-tooltip
+            Used on this demo
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.0/dist/umd/uuidv4.min.js"></script>
+        <script>
+            // This prevents an error from showing in DevTools for
+            // [react-tooltip] however it's not required for the page to work
+            window.module = window;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/react-tooltip@4.2.8/dist/index.js"></script>
+
+        <!--
+            React Simple Maps and required dependants
+            https://www.react-simple-maps.io/
+
+            Depending on React Simple Maps features used additional scripts may be required.
+            To find them look up `require('module')` statements in the related code. 
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-array@2.5.1/dist/d3-array.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-geo@1.12.1/dist/d3-geo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@1.0.6/dist/d3-dispatch.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-zoom@1.8.3/dist/d3-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-drag@1.2.5/dist/d3-drag.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@1.4.0/dist/d3-interpolate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-selection@1.4.2/dist/d3-selection.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-transition@1.3.2/dist/d3-transition.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-selection@1.4.2/dist/d3-selection.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-color@2.0.0/dist/d3-color.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-scale@3.2.1/dist/d3-scale.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-simple-maps@2.1.2/dist/index.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-simple-maps.jsx"></script>
+
+        <!--
+            This page will not work with IE or other legacy broswers.
+        -->
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.4.2/js/web-components/safari-nomodule.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@4.4.2/js/web-components/old-browser-warning.min.js"></script>       
+    </body>
+</html>

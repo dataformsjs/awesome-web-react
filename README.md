@@ -27,6 +27,7 @@
 - [Select Controls](#select-controls)
 - [Rich Text Editors](#rich-text-editors)
 - [Drag and Drop](#drag-and-drop)
+- [Charts and Maps](#charts-and-maps)
 - [Component and Hook Libraries](#component-and-hook-libraries)
 - [Javascript and jQuery Libraries](#javascript-and-jquery-libraries)
 - [State Management](#state-management)
@@ -104,6 +105,10 @@ _Find a large selection of React Components and Tools from these Awesome React L
 ## Image and Media Controls
 
 - [DataFormsJS Image Gallery](https://www.dataformsjs.com/examples/image-gallery-react.htm) - Component <ImageGallery> that shows Large Image in Overlay with Mobile and Desktop support.
+
+## Charts and Maps
+
+- [React Simple Maps](https://github.com/zcreativelabs/react-simple-maps) - Create beautiful SVG maps in react with d3-geo and topojson using a declarative api.
 
 ## Component and Hook Libraries
 
