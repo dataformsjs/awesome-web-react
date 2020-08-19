@@ -109,6 +109,7 @@ _Find a large selection of React Components and Tools from these Awesome React L
 ## Charts and Maps
 
 - [React Simple Maps](https://github.com/zcreativelabs/react-simple-maps) - Create beautiful SVG maps in react with d3-geo and topojson using a declarative api.
+- [React Chart.js 2](https://github.com/jerairrest/react-chartjs-2) - React wrapper for Chart.js.
 
 ## Component and Hook Libraries
 

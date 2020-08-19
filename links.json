@@ -203,7 +203,7 @@
         ]
     },
     {
-        "category": "Charts and Maps",
+        "category": "📊 Charts and Maps 🗺️",
         "directory": "charts-and-maps",
         "links": [
             {
@@ -213,6 +213,15 @@
                 "site": "https://www.react-simple-maps.io/",
                 "github": "https://github.com/zcreativelabs/react-simple-maps",
                 "image": "https://raw.githubusercontent.com/dataformsjs/static-files/master/img/awesome-web-react/card-images/react-simple-maps.png"
+            },
+            {
+                "name": "React Chart.js 2",
+                "description": "React wrapper for Chart.js.",
+                "example": "react-chartjs-2.htm",
+                "site": "http://jerairrest.github.io/react-chartjs-2/",
+                "github": "https://github.com/jerairrest/react-chartjs-2",
+                "image": "https://raw.githubusercontent.com/chartjs/Chart.js/master/docs/static/img/logo.svg",
+                "imageClassName": "pt20"
             }
         ]
     },

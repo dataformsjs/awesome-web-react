@@ -1,4 +1,4 @@
-// NOTE - Map Code here is based on code from various examples at:
+// NOTE - Map Code here is based on code from various examples at (MIT License):
 //  https://www.react-simple-maps.io/examples/
 
 const rounded = num => {

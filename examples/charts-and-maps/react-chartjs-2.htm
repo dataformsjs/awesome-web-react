@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>React Chart.js Demo</title>
+        <link rel="stylesheet" href="react-chartjs-2.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@4.4.2/js/react/jsxLoader.min.js"></script>
+        <script>
+            // For most apps `jsxLoader.addBabelPolyfills` can be used if the app
+            // needs `import` and `require` for Babel or `exports` and `require(module)` for the Browser.
+            // However [react-chartjs-2] requires many dependencies so a custom verison is used here.
+            //
+            // jsxLoader.addBabelPolyfills();
+
+            window.exports = window;
+            window.require = function(module) {
+                switch (module) {
+                    case 'react':
+                        return window.React;
+                    case 'react-dom':
+                        return window.ReactDOM;
+                    case 'prop-types':
+                        return window.PropTypes;
+                    case 'chart.js':
+                        // Normally this would be `window.Chart` however
+                        // [react-chartjs-2] overwrites `window.Chart`
+                        return window.chartjs;
+                    case 'lodash/isEqual':
+                        return window._.isEqual;
+                    case 'lodash/keyBy':
+                        return window._.keyBy;
+                    default:
+                        return window[module];
+                }
+            };
+        </script>
+
+        <!--
+            # Chart Library
+            https://www.chartjs.org/
+
+            # React Wrapper
+            https://github.com/jerairrest/react-chartjs-2
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script>
+            // [react-chartjs-2] overwrites the global `Chart` object defined by `chart.js` so
+            // make sure to reference it as a different variable before loading [react-chartjs-2].
+            window.chartjs = window.Chart;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-chartjs-2@2.10.0/lib/index.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-chartjs-2.jsx"></script>
+    </body>
+</html>
