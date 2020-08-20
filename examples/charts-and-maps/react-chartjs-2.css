@@ -22,9 +22,10 @@ section {
     padding: 20px 40px;
     margin: 40px;
     border-radius: 20px;
-    width: calc(100% - 120px);
-    max-width: 800px;
-    min-height: 40vh;
     background-color: white;
     text-align: center;
+}
+
+@media (min-width: 600px) {
+    canvas { min-height: 35vh; }
 }

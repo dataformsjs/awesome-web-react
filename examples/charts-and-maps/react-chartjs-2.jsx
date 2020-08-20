@@ -112,14 +112,7 @@ class App extends React.Component {
 
                 <section>
                     <h2>Bar Chart</h2>
-                    <Bar
-                        data={barData}
-                        width={100}
-                        height={50}
-                        options={{
-                            maintainAspectRatio: false
-                        }}
-                    />
+                    <Bar data={barData} />
                 </section>
 
                 <section>
