@@ -36,7 +36,12 @@
                 text-align: center;
                 align-items: center;
             }
-            #root { flex-direction: row; flex-wrap: wrap; padding-bottom: 40px; }
+            #root {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding-bottom: 40px;
+                column-gap: 30px;
+            }
 
             /* Fix for IE 11 */
             @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
@@ -305,20 +310,21 @@
             }
 
             function Categories(props) {
+                const placeholder = "Enter filter, example 'design', 'hook', or 'state'";
                 return (
                     <>
                         <div className="filter-container">
                         <section className="filter">
                             <h2>Filter Code List and Examples</h2>
 
-                            <label for="filter">Enter filter, example 'design' or 'validation'</label>
+                            <label for="filter">{placeholder}</label>
                             <InputFilter
                                 id="filter"
                                 filter-selector="section.category ul li.link"
                                 filter-results-selector=".filter-count"
                                 filter-results-text-all="Showing all {totalCount} Items"
                                 filter-results-text-filtered="Showing {displayCount} of {totalCount} Items"
-                                placeholder="Enter filter, example 'design' or 'validation'"
+                                placeholder={placeholder}
                                 afterFilter={afterFilter} />
 
                             <span class="filter-count"></span>
@@ -364,7 +370,7 @@
                         {props.description && <p>{props.description}</p>}
                         <ul>
                             {props.links && props.links.map(link => {
-                                return <Card directory={props.directory} {...link} />
+                                return <Card directory={props.directory} category={props.category} {...link} />
                             })}
                         </ul>
                     </section>
@@ -386,6 +392,8 @@
                                 {props.site && <a href={props.site} target="_blank" rel="noopener">Site</a>}
                                 {props.github && <a href={props.github} target="_blank" rel="noopener">GitHub</a>}
                             </div>
+                            {/* Category is included but hidden so that all Items for the category will show on a filter */}
+                            <div style={{display:'none'}}>{props.category}</div>
                         </div>
                     </li>
                 )
