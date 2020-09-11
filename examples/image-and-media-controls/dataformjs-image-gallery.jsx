@@ -73,11 +73,11 @@ function ShowImages(props) {
                     </ImageGallery>
 
                 4) Specify a Different Loading Message and Timeout.
-                   Defaults to "Loading..." and 1000 millseconds.
+                   Defaults to "Loading..." and 2000 millseconds.
                     <ImageGallery
                         images={props.data.images}
                         loadingText="Carregando..."
-                        loadingTimeout={500} />
+                        loadingTimeout={1000} />
             */}
         </div>
     )
