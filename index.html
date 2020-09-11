@@ -125,7 +125,6 @@
             .filter-count { margin-top:1em; }
 
             section.category > ul {
-                list-style-type: none;
                 padding: 0;
                 margin: 0;
                 margin-top: 20px;
@@ -164,14 +163,17 @@
             }
 
             section h2 { margin:0 auto 1em auto; }
-            section ul { text-align:left; }
+            section h2.reasons { margin-top: 1.5em; }
+            section ul { text-align:left; list-style-type: none; }
             section ul li { margin-bottom:1em; margin-left:.5em; }
+            section.about ul li[data-emoji]::before { content:attr(data-emoji); margin-right:10px; }
+            section ul li span.emoji { margin:0 5px; }
             section.category ul li { margin-bottom: 2em; }
             section ul li:last-child { margin-bottom: 0; }
             section ul li p { margin: 1em 0; }
             section ul li .links { margin: 1em 1em 0; }
             section ul li .links a { margin: 0 1em 0.5em; font-weight: bold; display: inline-block; }
-            section ul li ul { margin-left:1em; margin-top:1em; margin-bottom: 1em; }
+            section.category ul li ul { margin-left:1em; margin-top:1em; margin-bottom: 1em; }
             section.category ul li ul { list-style-type:disc; }
             section.category ul li ul li { margin: .5em; }
 
@@ -246,7 +248,7 @@
         </h1>
 
         <section class="about">
-            <h2>Develop online with <a href="https://reactjs.org/" target="blank" rel="noopener">React</a>! 🌐 <br><span>No Build Tools Needed! 🚧</span></h2>
+            <h2>Develop online with <a href="https://reactjs.org/" target="blank" rel="noopener">React</a>!<br><span>No Build Tools Needed!</span></h2>
             <p>
                 <a href="https://github.com/dataformsjs/awesome-web-react" class="site-link">
                     <img src="https://raw.githubusercontent.com/dataformsjs/website/master/public/img/logos/GitHub-Mark-32px.png" alt="GitHub">
@@ -254,20 +256,19 @@
                 </a>
             </p>
             <ul>
-                <li>This site provides a list with examples of libraries and components that you can use to develop web pages and apps with React without any build tools.</li>
-                <li>Development build tools and projects such as <code>webpack</code>, <code>babel</code>, and <code>create-react-app</code> are great but they do not make sense for all sites, web pages, and development workflows.</li>
-                <li>With browser based options for JSX you can <strong>easily include React Components on any page</strong> without having to build the entire site using React or JSX.</li>
-                <li>
-                    <span>Reasons why you might want to do this can include:</span>
-                    <ul>
-                        <li><strong>Fast Development and Site Updates</strong> 🚀 Because there is no build process you can create and modify sites using any editor on any system.</li>
-                        <li><strong>Easily Share</strong> 🤝 Provide React code snippets to designers or web developers who do not know or use JavaScript.</li>
-                        <li><strong>Project Size</strong> 📦 This site includes many example mini apps and each one is typically less than 10 kB in size while a standard React app using <code>create-react-app</code>  is between 150 and 250 MB and includes over 30,000 files.</li>
-                        <li><strong>Add to any Page</strong> 📄 Add React to legacy and existing sites or web pages. Often React is used on new projects only but with online development options you can include React and Libraries directly from a CDN or JavaScript files.</li>
-                        <li><strong>Learn React</strong> 🏫 Web Development with only a Browser and a Text Editor is any easy way to get started with React or try new ideas and features.</li>
-                        <li><strong>Rapid Prototyping</strong> 🚆 Instantly develop ideas and into quick apps and then migrate to a build process later if you want to.</li>
-                    </ul>
-                </li>
+                <li data-emoji="🚀">This site provides a list with examples of libraries and components that you can use to develop web pages and apps with React without any build tools.</li>
+                <li data-emoji="🚧">Development build tools and projects such as <code>webpack</code>, <code>babel</code>, and <code>create-react-app</code> are great but they do not make sense for all sites, web pages, and development workflows.</li>
+                <li data-emoji="🌐">With browser based options for JSX you can <strong>easily include React Components on any page</strong> without having to build the entire site using React or JSX.</li>
+            </ul>
+
+            <h2 class="reasons">Reasons for online React Development</h2>
+            <ul>
+                <li data-emoji="🚀"><strong>Fast Development and Site Updates</strong> <span class="emoji">🚀</span> Because there is no build process you can create and modify sites using any editor on any system.</li>
+                <li data-emoji="🤝"><strong>Easily Share</strong> <span class="emoji">🤝</span> Provide React code snippets to designers or web developers who do not know or use JavaScript.</li>
+                <li data-emoji="📦"><strong>Project Size</strong> <span class="emoji">📦</span> This site includes many example mini apps and each one is typically less than 10 kB in size while a standard React app using <code>create-react-app</code>  is between 150 and 250 MB and includes over 30,000 files.</li>
+                <li data-emoji="📄"><strong>Add to any Page</strong> <span class="emoji">📄</span> Add React to legacy and existing sites or web pages. Often React is used on new projects only but with online development options you can include React and Libraries directly from a CDN or JavaScript files.</li>
+                <li data-emoji="🏫"><strong>Learn React</strong> <span class="emoji">🏫</span> Web Development with only a Browser and a Text Editor is any easy way to get started with React or try new ideas and features.</li>
+                <li data-emoji="🚆"><strong>Rapid Prototyping</strong> <span class="emoji">🚆</span> Instantly develop ideas and into quick apps and then migrate to a build process later if you want to.</li>
             </ul>
         </section>
 
