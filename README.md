@@ -5,7 +5,7 @@
 <hr>
 
 <p align="center">
-	🚀 View Examples at: <a href="https://awesome-web-react.js.org/">https://awesome-web-react.js.org/</a>
+    🚀 View Examples at: <a href="https://awesome-web-react.js.org/">https://awesome-web-react.js.org/</a>
 </p>
 <p align="center">
     <a href="CONTRIBUTING.md">🤝 Contributing</a>
@@ -39,13 +39,13 @@
 - Development build tools and projects such as `webpack`, `babel`, and `create-react-app` are great but they do not make sense for all sites, web pages, and development workflows.
 - With browser based options for JSX you can **easily include React Components on any page** without having to build the entire site using React or JSX.
 - Reasons why you might want to do this can include:
-  - **Fast Development and Site Updates** - Because there is no build process you can create and modify sites using any editor on any system.
-  - **Easily Share** - Provide React code snippets to designers or web developers who do not know or use JavaScript.
-  - **Project Size** - This site includes many example mini apps and each one is typically less than 10 kB in size while a standard React app using `create-react-app`  is between 150 and 250 MB and includes over 30,000 files.
-  - **Add to any Page** - Add React to legacy and existing sites or web pages. Often React is used on new projects only but with online development options you can include React and Libraries directly from a CDN or JavaScript files.
-  - **Learn React** - Web Development with only a Browser and a Text Editor is any easy way to get started with React or try new ideas and features.
-  - **Rapid Prototyping** - Instantly develop ideas and into quick apps and then migrate to a build process later if you want to.
-- You can try all examples in your browser at {link}.
+  - 🚀 **Fast Development** 🚀 Because there is no build process you can create and modify sites using any editor on any system.
+  - 🤝 **Easily Share** 🤝 Provide React code snippets to designers or web developers who do not know or use JavaScript.
+  - 📦 **Project Size** 📦 This site includes many example mini apps and each one is typically less than 10 kB in size while a standard React app using `create-react-app`  is between 150 and 250 MB and includes over 30,000 files.
+  - 📄 **Add to any Page** 📄 Add React to legacy and existing sites or web pages. Often React is used on new projects only but with online development options you can include React and Libraries directly from a CDN or JavaScript files.
+  - 🏫 **Learn React** 🏫 Web Development with only a Browser and a Text Editor is any easy way to get started with React or try new ideas and features.
+  - 🚆 **Rapid Prototyping** 🚆 Instantly develop ideas and into quick apps and then migrate to a build process later if you want to.
+- You can try all examples in your browser at https://awesome-web-react.js.org/.
 - All examples can be ran locally by downloading this repository and running `npm start`. Only node is required and no dependencies are needed.
 
 ## Web Based Development Options
