@@ -30,7 +30,7 @@ function ShowCountries() {
                 {data && data.countries && data.countries.map(country => {
                     return (
                         <li key={country.iso}>
-                            <i class={country.iso.toLowerCase() + ' flag'}></i>
+                            <i className={country.iso.toLowerCase() + ' flag'}></i>
                             <span>{country.country}</span>
                         </li>
                     )
