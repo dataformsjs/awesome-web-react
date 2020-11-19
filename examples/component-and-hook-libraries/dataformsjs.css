@@ -78,3 +78,6 @@ table tbody tr:nth-child(odd) { background-color: white; }
 table tbody tr:nth-child(even) { background-color: #f6f8fa; }
 table tbody tr.row-odd { background-color: white; }
 table tbody tr.row-even { background-color: #f6f8fa; }
+table tbody tr.highlight { background-color: yellow; }
+
+.pointer { cursor: pointer; }

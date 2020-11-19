@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Resources for online development with React! 🌐 No Build Tools Needed! 🚧">
         <title>Awesome Web Based React</title>
         <link rel="shortcut icon" href="favicon.ico" />
@@ -278,15 +278,16 @@
             React
             https://reactjs.org/
         -->
-        <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react@17.0.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 
         <!--
             DataFormsJS JSX Loader and React Components
             https://www.dataformsjs.com/
         -->
         <script src="https://cdn.jsdelivr.net/npm/dataformsjs@5.0.1/js/react/jsxLoader.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@5.0.1/js/react/es5/DataFormsJS.min.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/dataformsjs@5.0.1/js/react/es6/DataFormsJS.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@5.0.1/js/react/es5/DataFormsJS.min.js"></script>
         <script>
             // Set to `true` to view compiler details
             jsxLoader.logCompileTime = false;

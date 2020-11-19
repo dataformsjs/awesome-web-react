@@ -19,7 +19,7 @@
             {
                 "name": "DataFormsJS JSX Loader",
                 "descList": [
-                    "An ultra-fast and tiny (5.4 kB) browser based compiler for JSX / React.",
+                    "An ultra-fast and tiny (5.7 kB) browser based compiler for JSX / React.",
                     "Created for production use with all browsers. This site was created because of the JSX Loader and most examples on this site use it.",
                     "The JSX Loader is designed for compatibility with Babel Standalone.",
                     "It compiles JSX to JS for modern browsers and for legacy browsers it will download and use Polyfills and Babel Standalone."

@@ -88,8 +88,8 @@ This list is for Web Based React Development so please make sure you submit pull
     The reason is that when the major version is used from [unpkg] a redirect request will be made.
     When using the specific version then CDN caching is used with no redirects.
 -->
-<script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@17.0.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 
 <!--
     Related React core libraries that are used in one or more demos.
