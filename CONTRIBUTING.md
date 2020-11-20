@@ -80,8 +80,8 @@ This list is for Web Based React Development so please make sure you submit pull
 <!--
     The documentation from React shows how to use with the major version like this:
 -->
-<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 
 <!--
     In general the specific (and latest version) is being used directly in the examples.
