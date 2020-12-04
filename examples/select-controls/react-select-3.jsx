@@ -1,5 +1,5 @@
 
-import Select from 'https://cdn.pika.dev/react-select@3.1.0';
+import Select from 'https://cdn.skypack.dev/react-select@3.1.1';
 
 // List of largest countries (by population)
 // https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)
