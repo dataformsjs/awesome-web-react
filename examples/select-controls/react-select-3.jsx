@@ -1,4 +1,6 @@
 
+import Select from 'https://cdn.pika.dev/react-select@3.1.0';
+
 // List of largest countries (by population)
 // https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)
 // https://www.geonames.org/countries/
@@ -55,7 +57,7 @@ class App extends React.Component {
                     <a href="https://react-select.com/home" target="_blank" rel="noopener">https://react-select.com/home</a>
                 </p>
                 <p>
-                    This page uses React Select Version 2 and works with all Browsers. For a React Select 3 demo see <a href="react-select-3.htm">react-select-3.htm</a>.
+                    This page uses React Select Version 3 and only works with Modern Browsers. For a React Select 2 demo that works with all browsers see <a href="react-select.htm">react-select.htm</a>.
                 </p>
 
                 <section>
@@ -83,7 +85,7 @@ class App extends React.Component {
                 </section>
 
                 <section>
-                    <strong>Selected Countries:</strong> {this.state.countries.map(i => i.value).join(', ')}
+                    <strong>Selected Countries:</strong> {this.state.countries && this.state.countries.map(i => i.value).join(', ')}
                 </section>
             </>
         );

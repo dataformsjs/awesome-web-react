@@ -17,23 +17,24 @@
         <script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 
         <!--
-            DataFormsJS JSX Loader
+            DataFormsJS JSX Loader and warning for old browsers
             https://www.dataformsjs.com/
         -->
         <script src="https://cdn.jsdelivr.net/npm/dataformsjs@5.4.0/js/react/jsxLoader.min.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@5.4.0/js/web-components/old-browser-warning.min.js"></script>
 
         <!--
             React Select
-            https://react-select.com/home
+            https://react-select.com/home 
 
-            Several dependencies are required to use React Select from CDN
+            Rather than including scripts as is done with React Select 2 when using UMD
+            React Select 3 uses an import from the JSX file:
+                import Select from '..';
+            
+            In order for the import to work [data-type="module"] must be specified.
         -->
-        <script src="https://cdn.jsdelivr.net/npm/emotion@9.2.12/dist/emotion.umd.min.js"></script>
-        <script src="https://unpkg.com/prop-types@15.5.10/prop-types.min.js"></script>
-        <script src="https://unpkg.com/react-input-autosize@2.2.1/dist/react-input-autosize.min.js"></script>
-        <script src="https://unpkg.com/react-select@2.1.2/dist/react-select.min.js"></script>
 
         <!-- App Code -->
-        <script type="text/babel" src="react-select.jsx"></script>
+        <script type="text/babel" data-type="module" src="react-select-3.jsx"></script>
     </body>
 </html>
