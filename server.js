@@ -5,14 +5,23 @@
  * To run:
  *    npm start
  *
+ * If you do not have node/npm installed and still want to run this
+ * site locally then you can also run it if you have Python installed.
+ * Depending on the version Python installed and the OS one of the
+ * following commands should work:
+ *     python3 -m http.server
+ *     python -m http.server
+ *     python -m SimpleHTTPServer
+ *
  * Important - This script is very minimal by design and includes no error handling.
  * It works well but has few features so is not intended for production apps.
  *
  * Since this file is small you can step through the code using a debugger
  * which makes it is useful for learning purposes.
- * 
- * @link https://github.com/dataformsjs
- * @license CC0 "Public Domain" license
+ *
+ * @link     https://github.com/dataformsjs/awesome-web-react/blob/master/server.js
+ * @author   Conrad Sollitt (https://conradsollitt.com)
+ * @license  CC0 "Public Domain" license
  */
 
 /* Validates online with both [jshint] and [eslint] */
