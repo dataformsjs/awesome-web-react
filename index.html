@@ -360,9 +360,9 @@
                 });
 
                 // See comments near the bottom of this file.
-                if (window.chrome && keepScrollPosition) {
-                    localStorage.setItem('filter', document.getElementById('filter').value);
-                }
+                // if (window.chrome && keepScrollPosition) {
+                //     localStorage.setItem('filter', document.getElementById('filter').value);
+                // }
             }
 
             function Category(props) {
@@ -444,8 +444,7 @@
                                 url="links.json"
                                 isLoading={<ShowLoading />}
                                 hasError={<ShowError />}
-                                isLoaded={<Categories />}
-                                onViewUpdated={onViewUpdated} />
+                                isLoaded={<Categories />} />
                         </ErrorBoundary>
                     )
                 }
@@ -456,6 +455,14 @@
                 document.getElementById('root')
             );
 
+            // Removed for User Experience (UX) on 2021-02-05 but code is being
+            // kept in case it will be added back in the future.
+            //
+            // ** If adding back:
+            //  1) Uncomment code block below
+            //  2) Search code above for "keepScrollPosition" and uncomment 
+            //  3) Added prop [onViewUpdated={onViewUpdated}] to the JsonData Component
+            //
             // All code below is for use with Google Chrome so that then the user clicks
             // back and forth between pages the position on screen will be kept.
             // This provides a better experience for users who view examples one at
@@ -470,7 +477,7 @@
             //
             // The input filter is also saved to local storage from `afterFilter()`
             // as it changes the layout of the page when the user clicks back.
-
+            /*
             let keepScrollPosition = false;
             if (window.chrome) {
                 document.addEventListener('scroll', function () {
@@ -514,6 +521,7 @@
                     keepScrollPosition = true;
                 }, 500);
             }
+            */
         </script>
     </body>
 </html>
