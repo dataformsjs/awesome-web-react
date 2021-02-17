@@ -4,6 +4,8 @@
 // Recoil is an experimental state management library from Facebook for React apps. 
 // Recoil also includes additional API functions not included in this demo.
 
+const { RecoilRoot, atom, useRecoilState, useRecoilValue } = window.Recoil;
+
 // ------------------------------------------------------------------------
 //
 // Counters using shared state with an `atom` and `useRecoilState`.
