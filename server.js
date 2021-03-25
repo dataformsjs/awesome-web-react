@@ -31,7 +31,7 @@
 'use strict';
 
 const http = require('http');
-const url = require('url');
+const { URL } = require('url');
 const fs = require('fs');
 const path = require('path');
 
@@ -96,7 +96,7 @@ const server = http.createServer((req, res) => {
     }
 
     // Send root [index.html] file
-    const reqPath = url.parse(req.url).pathname;
+    const reqPath = new URL(req.url, `http://${req.headers.host}`).pathname;
     if (reqPath === '/') {
         sendFile(path.join(__dirname, 'index.html'));
         return;
