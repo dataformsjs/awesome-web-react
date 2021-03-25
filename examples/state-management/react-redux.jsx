@@ -41,38 +41,24 @@ function reducer(state = initialState, action) {
     switch(action.type) {
         case 'INCREMENT':
             return {
+                ...state,
                 count: state.count + 1, // Add Count by 1
-                items: state.items,
-                isVisible: state.isVisible,
             };
         case 'DECREMENT':
             return {
+                ...state,
                 count: state.count - 1, // Subtract Count by 1
-                items: state.items,
-                isVisible: state.isVisible,
             };
         case 'ADD_ITEM':
             return {
-                count: state.count,
+                ...state,
                 items: state.items.concat(action.item), // Add item to a new array
-                isVisible: state.isVisible,
             };
         case 'TOGGLE_VISIBILITY':
             return {
-                count: state.count,
-                items: state.items,
+                ...state,
                 isVisible: !state.isVisible, // Change from `true` to `false` and vice-versa
             };
-        // NOTE - you can use the spread syntax `...` to return all
-        // other properties for the state as shown below. In the
-        // code above all properties are named to keep the example
-        // clear and easy to follow.
-        //
-        // case 'ADD_ITEM':
-        //     return {
-        //         ...state,
-        //         items: state.items.concat(action.item),
-        //     };
         default:
             return state;
     }

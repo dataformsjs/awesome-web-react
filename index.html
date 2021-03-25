@@ -292,11 +292,6 @@
             // Set to `true` to view compiler details
             jsxLoader.logCompileTime = false;
             jsxLoader.logCompileDetails = false;
-
-            // This page uses the `...` spread syntax which is not supported by all modern browsers.
-            // Set JSX Loader to fallback to Babel for modern browsers that do not support the spread syntax.
-            // This includes UC Browser and Edge using EdgeHTML.
-            jsxLoader.evalCode = 'const { id, ...other } = { id:123, test:456 }';
         </script>
 
         <!-- App Code -->

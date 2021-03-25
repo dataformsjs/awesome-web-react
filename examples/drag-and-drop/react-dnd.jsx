@@ -39,17 +39,8 @@ const Dustbin = () => {
         backgroundColor = 'darkkhaki'
     }
 
-    // Using `Object.assign()` instead of `...styleDustbin` because of a bug with
-    // Babel if using Edge (EdgeHTML) or IE 11. Works fine on modern browsers that support spread syntax.
-    /*
     return (
         <div ref={drop} style={{ ...styleDustbin, backgroundColor }}>
-            {isActive ? 'Release to drop' : 'Drag a box here'}
-        </div>
-    )
-    */
-    return (
-        <div ref={drop} style={Object.assign({}, styleDustbin, {backgroundColor:backgroundColor})}>
             {isActive ? 'Release to drop' : 'Drag a box here'}
         </div>
     )
@@ -82,17 +73,8 @@ const Box = ({ name }) => {
     })
     const opacity = isDragging ? 0.4 : 1
 
-    // Using `Object.assign()` instead of `...style` because of a bug with
-    // Babel if using Edge (EdgeHTML) or IE 11. Works fine on modern browsers that support spread syntax.
-    /*
     return (
         <div ref={drag} style={{ ...style, opacity }}>
-            {name}
-        </div>
-    )
-    */
-    return (
-        <div ref={drag} style={Object.assign({}, style, {opacity:opacity})}>
             {name}
         </div>
     )
