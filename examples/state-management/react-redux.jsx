@@ -121,7 +121,7 @@ const Counter = connect(mapStateToProps)(CounterView);
 //
 // These counters do not use Redux so any update is displayed
 // only on the specific component. This example shows that you can
-// still use regular state and components in a Redux app. Bascially
+// still use regular state and components in a Redux app. Basically
 // parts of your app can use Redux for state when it makes sense while
 // using Redux is not required for all components.
 //

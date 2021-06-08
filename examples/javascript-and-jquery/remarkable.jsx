@@ -4,7 +4,7 @@ const Remarkable = remarkable.Remarkable;
 // `MarkdownEditor` is based on example code from the main react site:
 //     https://reactjs.org/
 // Only slight changes have been made for formatting, layout,
-// and passing a default vlaue. 
+// and passing a default value. 
 
 class MarkdownEditor extends React.Component {
     constructor(props) {
