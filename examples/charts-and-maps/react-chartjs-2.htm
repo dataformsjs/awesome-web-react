@@ -24,7 +24,7 @@
         <script>
             // For most apps `jsxLoader.addBabelPolyfills` can be used if the app
             // needs `import` and `require` for Babel or `exports` and `require(module)` for the Browser.
-            // However [react-chartjs-2] requires many dependencies so a custom verison is used here.
+            // However [react-chartjs-2] requires many dependencies so a custom version is used here.
             //
             // jsxLoader.addBabelPolyfills();
 
@@ -57,16 +57,19 @@
 
             # React Wrapper
             https://github.com/jerairrest/react-chartjs-2
+
+            [react-chartjs-2] works with Chart.js versions 2 and 3
         -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script> -->
         <script>
             // [react-chartjs-2] overwrites the global `Chart` object defined by `chart.js` so
             // make sure to reference it as a different variable before loading [react-chartjs-2].
             window.chartjs = window.Chart;
         </script>
         <script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/react-chartjs-2@2.10.0/lib/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-chartjs-2@2.11.1/lib/index.js"></script>
 
         <!-- App Code -->
         <script type="text/babel" src="react-chartjs-2.jsx"></script>

@@ -92,6 +92,9 @@ const radarData = {
 
 class App extends React.Component {
     render() {
+        const chartHeight = 350;
+        const chartWidth = 650;
+        const chartOptions = { maintainAspectRatio: false, responsive: false };
         return (
             <>
                 <h1>React Chart.js Demo</h1>
@@ -104,25 +107,25 @@ class App extends React.Component {
                 <p>
                     <a href="https://github.com/jerairrest/react-chartjs-2" target="_blank" rel="noopener">https://github.com/jerairrest/react-chartjs-2</a>
                 </p>
-                
+
                 <section>
                     <h2>Pie Chart</h2>
-                    <Pie data={pieData} />
+                    <Pie data={pieData} height={chartHeight} width={chartWidth} options={chartOptions} />
                 </section>
 
                 <section>
                     <h2>Bar Chart</h2>
-                    <Bar data={barData} />
+                    <Bar data={barData} height={chartHeight} width={chartWidth} options={chartOptions} />
                 </section>
 
                 <section>
                     <h2>Line Chart</h2>
-                    <Line data={lineData} />
+                    <Line data={lineData} height={chartHeight} width={chartWidth} options={chartOptions} />
                 </section>
 
                 <section>
                     <h2>Radar Chart</h2>
-                    <Radar data={radarData} />
+                    <Radar data={radarData} height={chartHeight} width={chartWidth} options={chartOptions} />
                 </section>
             </>
         );
