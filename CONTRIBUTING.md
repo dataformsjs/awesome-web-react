@@ -40,7 +40,7 @@ This list is for Web Based React Development so please make sure you submit pull
   - Category graphics in `links.json` are unicode emojis
   - You can find emojis here: https://emojipedia.org/
   - In the `README.md` file add new categories to the Content/Index first H2 section.
-- The category `Web Based Development Options` is a specialy category that can use more than one sentance per item.
+- The category `Web Based Development Options` is a special category that can use more than one sentence per item.
   - However only production-ready options that are well tested and well documented can be added.
   - Please open an issue first if you would like to submit to this category.
 - Please open an issue before submitting to `Awesome Lists` as well.
@@ -98,7 +98,7 @@ This list is for Web Based React Development so please make sure you submit pull
 <script src="https://unpkg.com/react-is@17.0.2/umd/react-is.production.min.js"></script>
 ```
 
-## Making Site Design Changes (UI - User Interface, UX - User Experince, etc)
+## Making Site Design Changes (UI - User Interface, UX - User Experience, etc)
 
 - Changes are welcome but may not be accepted.
 - Please open an issue first with your ideas before spending time on site updates.
