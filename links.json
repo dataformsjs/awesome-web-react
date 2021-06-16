@@ -222,6 +222,15 @@
                 "github": "https://github.com/jerairrest/react-chartjs-2",
                 "image": "https://raw.githubusercontent.com/chartjs/chartjs.github.io/master/img/chartjs-logo.svg",
                 "imageClassName": "pt20"
+            },
+            {
+                "name": "React ApexCharts",
+                "description": "React.js wrapper for ApexCharts to build interactive visualizations in React.",
+                "example": "react-apexcharts.htm",
+                "site": "https://apexcharts.com/",
+                "github": "https://github.com/apexcharts/react-apexcharts",
+                "image": "https://camo.githubusercontent.com/11a432c7523baae586b15f6ee8468c448c7f35914f74ad8e9b278e058c9e4319/68747470733a2f2f617065786368617274732e636f6d2f6d656469612f72656163742d617065786368617274732e706e67",
+                "imageClassName": "pt20"
             }
         ]
     },

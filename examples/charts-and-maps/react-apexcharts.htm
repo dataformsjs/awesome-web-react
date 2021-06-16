@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>React ApexCharts Demo</title>
+        <link rel="stylesheet" href="react-apexcharts.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@5/js/react/jsxLoader.min.js"></script>
+        <script>
+            // For most apps `jsxLoader.addBabelPolyfills` can be used if the app
+            // needs `import` and `require` for Babel or `exports` and `require(module)` for the Browser.
+            // However [react-apexcharts] requires has overlapping an global variable with the
+            // main lib `ApexCharts` so a custom version is used here.
+            //
+            // jsxLoader.addBabelPolyfills();
+
+            window.exports = window;
+            window.require = function(module) {
+                switch (module) {
+                    case 'react':
+                        return window.React;
+                    case 'react-dom':
+                        return window.ReactDOM;
+                    case 'prop-types':
+                        return window.PropTypes;
+                    case 'apexcharts/dist/apexcharts.common':
+                        return window.ApexChartsJS;
+                    default:
+                        return window[module];
+                }
+            };
+        </script>
+
+        <!--
+            https://github.com/apexcharts/react-apexcharts
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.1/dist/apexcharts.min.js"></script>
+        <script>
+            // Create an alias for `ApexCharts` before  `react-apexcharts.min.js` is loaded
+            window.ApexChartsJS = window.ApexCharts;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-apexcharts@1.3.9/dist/react-apexcharts.min.js"></script>
+
+        <!-- App Code -->
+        <script type="text/babel" src="react-apexcharts.jsx"></script>
+    </body>
+</html>
