@@ -85,6 +85,7 @@ _Find a large selection of React Components and Tools from these Awesome React L
 - [Styled Components](https://github.com/styled-components/styled-components) - Visual primitives for the component age.
 - [Evergreen](https://github.com/segmentio/evergreen) - Evergreen React UI Framework by Segment.
 - [React-Toastify](https://github.com/fkhadra/react-toastify) - React-Toastify allows you to add notifications to your app with ease.
+- [CoreUI for React](https://github.com/coreui/coreui-react) - Open Source UI components library for creating modern, beautiful, and responsive applications.
 
 ## Routing
 
