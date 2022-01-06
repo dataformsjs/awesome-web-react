@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CoreUI for React.js</title>
+        <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@2.1.16/dist/css/coreui.min.css" rel="stylesheet">
+        <style>
+            .navbar .container {
+                max-width: fit-content;
+            }
+            .container.content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .toast-container {
+                top: 0;
+                right: 0;
+            }
+            .toast-header strong { padding:4px 8px; }
+            h1 {
+                padding-top:40px;
+            }
+            .row {
+                padding-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!--
+            React
+            https://reactjs.org/
+        -->
+        <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+        <!--
+            DataFormsJS JSX Loader
+            https://www.dataformsjs.com/
+            https://github.com/dataformsjs/dataformsjs/blob/master/docs/jsx-loader.md
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/dataformsjs@5/js/react/jsxLoader.min.js"></script>
+
+        <!--
+            https://coreui.io/react/
+            https://github.com/coreui/coreui-react
+            https://github.com/coreui/coreui
+            https://github.com/coreui/coreui-free-react-admin-template
+        -->
+        <script>
+            // CoreUI (as of version 4.1.1) contains a distribution script for node [dist/index.es.js]
+            // however to work from a browser it requires some modifications to the built file before it
+            // before it is added to the browser.
+            window.process = { env:{NODE_ENV:'production'} };
+            jsxLoader.jsUpdates.push({
+                find: /import \* as React from 'react';/g,
+                replace: '(function() {\n\n'
+            });
+            jsxLoader.jsUpdates.push({
+                find: /import React__default, { createContext, forwardRef, useState, useRef, useContext, useEffect, useMemo, Children, useLayoutEffect, useCallback } from 'react';/g,
+                replace: "const React__default = window.React; const { createContext, forwardRef, useState, useRef, useContext, useEffect, useMemo, Children, useLayoutEffect, useCallback } = window.React;"
+            });
+            jsxLoader.jsUpdates.push({
+                find: /import ReactDOM, { createPortal } from 'react-dom';/g,
+                replace: 'const { createPortal } = window.ReactDOM;'
+            });
+            jsxLoader.jsUpdates.push({
+                find: /export \{/g,
+                replace: 'window.CoreUI = {'
+            });
+            jsxLoader.jsUpdates.push({
+                find: /CWidgetStatsF };/g,
+                replace: 'CWidgetStatsF };\n\n})();'
+            });
+        </script>
+        <script type="text/babel" src="https://cdn.jsdelivr.net/npm/@coreui/react@4.1.1/dist/index.es.js"></script>
+        <!--
+            Using `dist/index.js` requires a below work-around and the following:
+                jsxLoader.addBabelPolyfills();
+
+            However it still won't work due to this error:
+                Uncaught TypeError: Cannot set property top of #<Window> which has only a getter
+        -->
+        <!--
+        <script>
+            window.ReactDOM_beforeCoreUI = window.ReactDOM;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@coreui/react@4.1.1/dist/index.js"></script>
+        <script>
+            window.ReactDOM = window.ReactDOM_beforeCoreUI;
+        </script>
+        -->
+
+        <!-- App Code -->
+        <script type="text/babel">
+            const {
+                CContainer,
+                CRow,
+                CCol,
+                CAlert,
+                CHeader,
+                CHeaderBrand,
+                CHeaderToggler,
+                CCollapse,
+                CNavbar,
+                CNavItem,
+                CNavLink,
+                CNavbarBrand,
+                CNavbarToggler,
+                CNavbarNav,
+                CDropdown,
+                CDropdownMenu,
+                CDropdownItem,
+                CDropdownDivider,
+                CDropdownToggle,
+                CButton,
+                CForm,
+                CFormInput,
+                CToast,
+                CToastHeader,
+                CToastBody,
+                CToaster
+            } = window.CoreUI;
+
+
+            function ExampleToast() {
+                const [toast, addToast] = React.useState(0)
+                const toaster = React.useRef();
+
+                const exampleToast = (
+                    <CToast title="CoreUI for React.js">
+                        <CToastHeader close>
+                        <svg
+                            className="rounded me-2"
+                            width="20"
+                            height="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice"
+                            focusable="false"
+                            role="img"
+                        >
+                            <rect width="100%" height="100%" fill="#007aff"></rect>
+                        </svg>
+                        <strong className="me-auto">CoreUI for React.js</strong>
+                        <small>7 min ago</small>
+                        </CToastHeader>
+                        <CToastBody>Hello, world! This is a toast message.</CToastBody>
+                    </CToast>
+                )
+                return (
+                    <>
+                        <CButton onClick={() => addToast(exampleToast)}>Send a toast</CButton>
+                        <CToaster ref={toaster} push={toast} placement="top-end" />
+                    </>
+                )                
+            }
+
+
+            function App() {
+                const [visible, setVisible] = React.useState(false);
+
+                return (
+                    <>
+                        <CNavbar expand="lg" colorScheme="light" className="bg-light">
+                            <CContainer>
+                                <CNavbarBrand href="#">CoreUI</CNavbarBrand>
+                                <CNavbarToggler onClick={() => setVisible(!visible)} />
+                                <CCollapse className="navbar-collapse" visible={visible}>
+                                <CNavbarNav>
+                                    <CNavItem>
+                                    <CNavLink href="#" active>
+                                        CoreUI
+                                    </CNavLink>
+                                    </CNavItem>
+                                    <CNavItem>
+                                    <CNavLink href="#">Link</CNavLink>
+                                    </CNavItem>
+                                    <CDropdown variant="nav-item" popper={false}>
+                                    <CDropdownToggle color="secondary">Dropdown button</CDropdownToggle>
+                                    <CDropdownMenu>
+                                        <CDropdownItem href="#">Action</CDropdownItem>
+                                        <CDropdownItem href="#">Another action</CDropdownItem>
+                                        <CDropdownDivider />
+                                        <CDropdownItem href="#">Something else here</CDropdownItem>
+                                    </CDropdownMenu>
+                                    </CDropdown>
+                                    <CNavItem>
+                                    <CNavLink href="#" disabled>
+                                        Disabled
+                                    </CNavLink>
+                                    </CNavItem>
+                                </CNavbarNav>
+                                <CForm className="d-flex">
+                                    <CFormInput type="search" className="me-2" placeholder="Search" />
+                                    <CButton type="submit" color="success" variant="outline">
+                                    Search
+                                    </CButton>
+                                </CForm>
+                                </CCollapse>
+                            </CContainer>
+                        </CNavbar>
+
+                        <CContainer className="content">
+                            <h1>CoreUI for React.js</h1>
+                            <CRow>
+                                <a href="/">🏠 Back to all Examples</a>
+                            </CRow>
+
+                            <CRow>
+                                <a href="https://coreui.io/react/" target="_blank" rel="noopener">https://coreui.io/react/</a>
+                            </CRow>
+
+                            <CRow>
+                                <CCol sm="auto"><ExampleToast /></CCol>
+                            </CRow>
+                        </CContainer>
+                    </>
+                );
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.getElementById('root')
+            );
+        </script>
+
+        <!--
+            Show warning for IE or other legacy browsers
+        -->
+        <script nomodule src="https://cdn.jsdelivr.net/npm/dataformsjs@5/js/web-components/old-browser-warning.min.js"></script>
+    </body>
+</html>

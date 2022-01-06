@@ -112,6 +112,15 @@
                 "github": "https://github.com/fkhadra/react-toastify",
                 "image": "img/logos/react-toastify.png",
                 "imageClassName": "width100_pt20"
+            },
+            {
+                "name": "CoreUI",
+                "description": "Open Source UI components library for creating modern, beautiful, and responsive applications.",
+                "example": "coreui.htm",
+                "site": "https://coreui.io/react/",
+                "github": "https://github.com/coreui/coreui-react",
+                "image": "https://camo.githubusercontent.com/aff2940238ca66b82e22f9f641942525a55ca637478420026dcad3b0c7337042/68747470733a2f2f636f726575692e696f2f696d616765732f6272616e642f636f726575692d7369676e65742e737667",
+                "imageClassName": "width100_pt20"
             }
         ]
     },
