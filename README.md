@@ -60,7 +60,7 @@
   - However it is very useful for development because you can debug and step through code directly in browser with React Development Tools.
   - JSX Code used in a Browser with Babel Standalone can also be used for local development using `create-react-app` and other tools.
 - [DataFormsJS JSX Loader](https://github.com/dataformsjs/dataformsjs/blob/master/docs/jsx-loader.md)
-  - An ultra-fast and tiny (6.9 kB) browser based compiler for JSX / React.
+  - An ultra-fast and tiny (7.1 kB) browser based compiler for JSX / React.
   - Created for production use with all browsers. This list was created because of the JSX Loader and most examples use it.
   - The JSX Loader is designed for compatibility with Babel Standalone.
   - It compiles JSX to JS for modern browsers and for legacy browsers it will download and use Polyfills and Babel Standalone.
