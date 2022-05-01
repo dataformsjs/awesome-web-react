@@ -227,7 +227,7 @@
                 "name": "React Chart.js 2",
                 "description": "React wrapper for Chart.js.",
                 "example": "react-chartjs-2.htm",
-                "site": "http://jerairrest.github.io/react-chartjs-2/",
+                "site": "https://react-chartjs-2.js.org/",
                 "github": "https://github.com/jerairrest/react-chartjs-2",
                 "image": "https://raw.githubusercontent.com/chartjs/chartjs.github.io/master/img/chartjs-logo.svg",
                 "imageClassName": "pt20"
