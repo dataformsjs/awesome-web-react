@@ -43,13 +43,6 @@
                 column-gap: 30px;
             }
 
-            /* Fix for IE 11 */
-            @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-                #root { flex-direction: column; }
-                section,
-                section.category > ul { max-width: 100vw; }
-            }
-
             body,
             a { color: #494368; }
             a:visited { color:#494368; }
@@ -241,6 +234,17 @@
                 box-shadow: none;
             }
         </style>
+        <script nomodule>
+            // Fix for IE 11
+            var style = document.createElement('style');
+            var css = '@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {';
+            css += '    #root { flex-direction: column; }'
+            css += '    section,';
+            css += '    section.category > ul { max-width: 100vw; }'
+            css += '}';
+            style.innerHTML = css;
+            document.head.appendChild(style);
+        </script>
     </head>
     <body>
         <h1>
