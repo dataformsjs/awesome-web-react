@@ -20,11 +20,11 @@
     <body>
         <div id="root"></div>
 
-        <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 
         <script type="module">
-            import htm from 'https://unpkg.com/htm?module'
+            import htm from 'https://cdn.jsdelivr.net/npm/htm?module'
             const html = htm.bind(React.createElement);
 
             // This demo will also work with Preact and HTM.
@@ -38,7 +38,7 @@
             //   5) Replace `React.Component` with `Component`
             //   5) Replace `ReactDOM.render` with `render`
             //
-            // import { html, Component, render } from 'https://unpkg.com/htm/preact/standalone.module.js'
+            // import { html, Component, render } from 'https://cdn.jsdelivr.net/npm/htm/preact/standalone.module.js'
 
             class App extends React.Component {
                 render() {
