@@ -83,7 +83,7 @@
                 "example": "ant-design.htm",
                 "site": "https://ant.design/",
                 "github": "https://github.com/ant-design/ant-design",
-                "image": "https://camo.githubusercontent.com/bc93494c1f9faf29cae5064245e03f086a2cb1b5/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667",
+                "image": "img/logos/ant-design.svg",
                 "imageClassName": "width100_pt20"
             },
             {
@@ -119,7 +119,7 @@
                 "example": "coreui.htm",
                 "site": "https://coreui.io/react/",
                 "github": "https://github.com/coreui/coreui-react",
-                "image": "https://camo.githubusercontent.com/aff2940238ca66b82e22f9f641942525a55ca637478420026dcad3b0c7337042/68747470733a2f2f636f726575692e696f2f696d616765732f6272616e642f636f726575692d7369676e65742e737667",
+                "image": "img/logos/core-ui.svg",
                 "imageClassName": "width100_pt20"
             }
         ]
@@ -134,7 +134,7 @@
                 "example": "react-router.htm",
                 "site": "https://reacttraining.com/react-router/",
                 "github": "https://github.com/ReactTraining/react-router",
-                "image": "https://camo.githubusercontent.com/f63754b8412368e820601967af6dea84312b925b/68747470733a2f2f7265616374747261696e696e672e636f6d2f72656163742d726f757465722f616e64726f69642d6368726f6d652d313434783134342e706e67",
+                "image": "img/logos/react-router-mark-color.svg",
                 "imageClassName": "width100_pt20"
             }
         ]
@@ -149,7 +149,7 @@
                 "example": "react-hook-form.htm",
                 "site": "https://react-hook-form.com/",
                 "github": "https://github.com/react-hook-form/react-hook-form",
-                "image": "https://raw.githubusercontent.com/react-hook-form/documentation/master/src/images/Logo.svg",
+                "image": "img/logos/react-hook-form.svg",
                 "imageClassName": "react-hook-form"
             }
         ]
@@ -178,7 +178,7 @@
                 "example": "draft-js.htm",
                 "site": "https://draftjs.org/",
                 "github": "https://github.com/facebook/draft-js",
-                "image": "https://camo.githubusercontent.com/0e290bac7e6590f554222bf34ab77f22a806663b/68747470733a2f2f64726166746a732e6f72672f696d672f64726166746a732d6c6f676f2e737667",
+                "image": "img/logos/draftjs-logo.svg",
                 "imageClassName": "width100_pt20"
             }
         ]
@@ -238,7 +238,7 @@
                 "example": "react-apexcharts.htm",
                 "site": "https://apexcharts.com/",
                 "github": "https://github.com/apexcharts/react-apexcharts",
-                "image": "https://camo.githubusercontent.com/11a432c7523baae586b15f6ee8468c448c7f35914f74ad8e9b278e058c9e4319/68747470733a2f2f617065786368617274732e636f6d2f6d656469612f72656163742d617065786368617274732e706e67",
+                "image": "img/logos/apex-charts.png",
                 "imageClassName": "pt20"
             }
         ]
@@ -321,7 +321,7 @@
                 "example": "react-flux.htm",
                 "site": "https://facebook.github.io/flux/",
                 "github": "https://github.com/facebook/flux",
-                "image": "https://camo.githubusercontent.com/08ea0e3effc06a72d66b18fe717c5769b8c547a2/68747470733a2f2f66616365626f6f6b2e6769746875622e696f2f666c75782f696d672f666c75782d6c6f676f2d636f6c6f722e737667",
+                "image": "img/logos/flux-logo-color.svg",
                 "imageClassName": "react-flux"
             },
             {
