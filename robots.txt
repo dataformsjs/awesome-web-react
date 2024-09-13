@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://awesome-web-react.js.org/sitemap.xml
